@@ -1,0 +1,3956 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ba293039fb77f11786cd1fd42c0f0c39 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ba293039fb77f11786cd1fd42c0f0c39" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ba293039fb77f11786cd1fd42c0f0c39 = L.map(
+                "map_ba293039fb77f11786cd1fd42c0f0c39",
+                {
+                    center: [36.0210346, -115.091069],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_ba293039fb77f11786cd1fd42c0f0c39);
+
+            
+
+        
+    
+            var tile_layer_9c925f6a9ba0de2ee1d12e2b1ed805c5 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9c925f6a9ba0de2ee1d12e2b1ed805c5.addTo(map_ba293039fb77f11786cd1fd42c0f0c39);
+        
+    
+            var feature_group_e6606dcf83602f14e4c166466834c558 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_026082e559d9482b7740cb30e656f8d9 = L.marker(
+                [36.04492049603932, -115.11484930335129],
+                {
+}
+            ).addTo(feature_group_e6606dcf83602f14e4c166466834c558);
+        
+    
+            var icon_9926177b0e9c72bca0a69ad21963153f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9b664a93c60f2cb9c50220991ed72f06 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_594e744e5e08955ac50cb69844449df3 = $(`<div id="html_594e744e5e08955ac50cb69844449df3" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.04492049603932,-115.11484930335129' target='_blank'>Jan 2021</a></div>`)[0];
+                popup_9b664a93c60f2cb9c50220991ed72f06.setContent(html_594e744e5e08955ac50cb69844449df3);
+            
+        
+
+        marker_026082e559d9482b7740cb30e656f8d9.bindPopup(popup_9b664a93c60f2cb9c50220991ed72f06)
+        ;
+
+        
+    
+    
+                marker_026082e559d9482b7740cb30e656f8d9.setIcon(icon_9926177b0e9c72bca0a69ad21963153f);
+            
+    
+            var marker_32e13348ed9d1b80a9dc42a4b99e6d90 = L.marker(
+                [36.04179520705119, -115.10167553391321],
+                {
+}
+            ).addTo(feature_group_e6606dcf83602f14e4c166466834c558);
+        
+    
+            var icon_2845e795a36dd8c550c03a8c26b6e9cf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_831688b0b6a4d7c6de33526a05652064 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d0827875d8327c148a5509f0a5964dcc = $(`<div id="html_d0827875d8327c148a5509f0a5964dcc" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.04179520705119,-115.10167553391321' target='_blank'>Feb 2021</a></div>`)[0];
+                popup_831688b0b6a4d7c6de33526a05652064.setContent(html_d0827875d8327c148a5509f0a5964dcc);
+            
+        
+
+        marker_32e13348ed9d1b80a9dc42a4b99e6d90.bindPopup(popup_831688b0b6a4d7c6de33526a05652064)
+        ;
+
+        
+    
+    
+                marker_32e13348ed9d1b80a9dc42a4b99e6d90.setIcon(icon_2845e795a36dd8c550c03a8c26b6e9cf);
+            
+    
+            var marker_23169696d6582429b16c03b6437f1a6d = L.marker(
+                [36.01755614636781, -115.04987820411164],
+                {
+}
+            ).addTo(feature_group_e6606dcf83602f14e4c166466834c558);
+        
+    
+            var icon_ef3e13e79b0a931d87cf0348ae2548e0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1ee93c0e78fe7d4730ab461109da1a18 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7a8dccd01bfa4db24d8677e26505656d = $(`<div id="html_7a8dccd01bfa4db24d8677e26505656d" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.01755614636781,-115.04987820411164' target='_blank'>Nov 2021</a></div>`)[0];
+                popup_1ee93c0e78fe7d4730ab461109da1a18.setContent(html_7a8dccd01bfa4db24d8677e26505656d);
+            
+        
+
+        marker_23169696d6582429b16c03b6437f1a6d.bindPopup(popup_1ee93c0e78fe7d4730ab461109da1a18)
+        ;
+
+        
+    
+    
+                marker_23169696d6582429b16c03b6437f1a6d.setIcon(icon_ef3e13e79b0a931d87cf0348ae2548e0);
+            
+    
+            var marker_9cc50657cd760bee631234ce277d989b = L.marker(
+                [35.988119129759156, -115.1113572645505],
+                {
+}
+            ).addTo(feature_group_e6606dcf83602f14e4c166466834c558);
+        
+    
+            var icon_03067da16d2c1b781b7d53a8152be37e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c3cf7642acf600bf9082d97922cdccf3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_39f638268423ea5117b77e58b7fb6b5b = $(`<div id="html_39f638268423ea5117b77e58b7fb6b5b" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=35.988119129759156,-115.1113572645505' target='_blank'>Feb 2021</a></div>`)[0];
+                popup_c3cf7642acf600bf9082d97922cdccf3.setContent(html_39f638268423ea5117b77e58b7fb6b5b);
+            
+        
+
+        marker_9cc50657cd760bee631234ce277d989b.bindPopup(popup_c3cf7642acf600bf9082d97922cdccf3)
+        ;
+
+        
+    
+    
+                marker_9cc50657cd760bee631234ce277d989b.setIcon(icon_03067da16d2c1b781b7d53a8152be37e);
+            
+    
+            var marker_edfe0bbd208af087b7462f02dbea8042 = L.marker(
+                [35.977591323848706, -115.05928251454424],
+                {
+}
+            ).addTo(feature_group_e6606dcf83602f14e4c166466834c558);
+        
+    
+            var icon_adc199af7cf3dd271d12e74070696197 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c57dc0316f65a3bf287b35023b5ab9b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ca98421456832f193d56ee0e58b95899 = $(`<div id="html_ca98421456832f193d56ee0e58b95899" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=35.977591323848706,-115.05928251454424' target='_blank'>Jan 2021</a></div>`)[0];
+                popup_3c57dc0316f65a3bf287b35023b5ab9b.setContent(html_ca98421456832f193d56ee0e58b95899);
+            
+        
+
+        marker_edfe0bbd208af087b7462f02dbea8042.bindPopup(popup_3c57dc0316f65a3bf287b35023b5ab9b)
+        ;
+
+        
+    
+    
+                marker_edfe0bbd208af087b7462f02dbea8042.setIcon(icon_adc199af7cf3dd271d12e74070696197);
+            
+    
+            var marker_84f0ad91d34a52e4e39dd3f524871d72 = L.marker(
+                [36.00892613225025, -115.13080266229338],
+                {
+}
+            ).addTo(feature_group_e6606dcf83602f14e4c166466834c558);
+        
+    
+            var icon_9b3158985ea4e96d893ce5616510f18c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ccf301f0df8345ba6f23b5d9853d75e2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ba233fc33b15a27f29c779d81ec0b398 = $(`<div id="html_ba233fc33b15a27f29c779d81ec0b398" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.00892613225025,-115.13080266229338' target='_blank'>Nov 2021</a></div>`)[0];
+                popup_ccf301f0df8345ba6f23b5d9853d75e2.setContent(html_ba233fc33b15a27f29c779d81ec0b398);
+            
+        
+
+        marker_84f0ad91d34a52e4e39dd3f524871d72.bindPopup(popup_ccf301f0df8345ba6f23b5d9853d75e2)
+        ;
+
+        
+    
+    
+                marker_84f0ad91d34a52e4e39dd3f524871d72.setIcon(icon_9b3158985ea4e96d893ce5616510f18c);
+            
+    
+            var marker_ad0cdd30012e534f6e79d5d6028c8135 = L.marker(
+                [36.02148762926027, -115.06682516358983],
+                {
+}
+            ).addTo(feature_group_e6606dcf83602f14e4c166466834c558);
+        
+    
+            var icon_9f54695d16dbe358041094616aa89cd5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1f77873fc7177c91d46b6a9e3918c3de = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_36c5ededad883e626dc15a4c37361374 = $(`<div id="html_36c5ededad883e626dc15a4c37361374" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.02148762926027,-115.06682516358983' target='_blank'>Nov 2021</a></div>`)[0];
+                popup_1f77873fc7177c91d46b6a9e3918c3de.setContent(html_36c5ededad883e626dc15a4c37361374);
+            
+        
+
+        marker_ad0cdd30012e534f6e79d5d6028c8135.bindPopup(popup_1f77873fc7177c91d46b6a9e3918c3de)
+        ;
+
+        
+    
+    
+                marker_ad0cdd30012e534f6e79d5d6028c8135.setIcon(icon_9f54695d16dbe358041094616aa89cd5);
+            
+    
+            feature_group_e6606dcf83602f14e4c166466834c558.addTo(map_ba293039fb77f11786cd1fd42c0f0c39);
+        
+    
+            var feature_group_eacf030be5eb5ce156d5fce79c8db4a7 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_01b18b66f88190ad0dcb596f337c8200 = L.marker(
+                [36.013255000126215, -115.1037326571526],
+                {
+}
+            ).addTo(feature_group_eacf030be5eb5ce156d5fce79c8db4a7);
+        
+    
+            var icon_20540b04b6939c08b45bfdb7cdf1f818 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_163e5b2fade24c98173ee07361523481 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7dd687b6c8e3cee253f4b913e5584a00 = $(`<div id="html_7dd687b6c8e3cee253f4b913e5584a00" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.013255000126215,-115.1037326571526' target='_blank'>Apr 2022</a></div>`)[0];
+                popup_163e5b2fade24c98173ee07361523481.setContent(html_7dd687b6c8e3cee253f4b913e5584a00);
+            
+        
+
+        marker_01b18b66f88190ad0dcb596f337c8200.bindPopup(popup_163e5b2fade24c98173ee07361523481)
+        ;
+
+        
+    
+    
+                marker_01b18b66f88190ad0dcb596f337c8200.setIcon(icon_20540b04b6939c08b45bfdb7cdf1f818);
+            
+    
+            var marker_47b2d73bc9aabca496cd1e321e44b835 = L.marker(
+                [36.059491020633, -115.04638864870495],
+                {
+}
+            ).addTo(feature_group_eacf030be5eb5ce156d5fce79c8db4a7);
+        
+    
+            var icon_eab8420e793194368113a51ddcf2e7a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bba11d1f48befad238ff76a33e88730d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_37c94275c051ddfa7ba1e6190b817159 = $(`<div id="html_37c94275c051ddfa7ba1e6190b817159" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.059491020633,-115.04638864870495' target='_blank'>Dec 2022</a></div>`)[0];
+                popup_bba11d1f48befad238ff76a33e88730d.setContent(html_37c94275c051ddfa7ba1e6190b817159);
+            
+        
+
+        marker_47b2d73bc9aabca496cd1e321e44b835.bindPopup(popup_bba11d1f48befad238ff76a33e88730d)
+        ;
+
+        
+    
+    
+                marker_47b2d73bc9aabca496cd1e321e44b835.setIcon(icon_eab8420e793194368113a51ddcf2e7a8);
+            
+    
+            var marker_9df759e540ab22b780aa5e3178f56bd3 = L.marker(
+                [35.98482590745207, -115.04416446162207],
+                {
+}
+            ).addTo(feature_group_eacf030be5eb5ce156d5fce79c8db4a7);
+        
+    
+            var icon_0a84310cb5b75ce76fb7dc46e21827b8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f5ea20dc362065289d68f510d3308b98 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9bc25abd0b32b38fe9ad083439f0833a = $(`<div id="html_9bc25abd0b32b38fe9ad083439f0833a" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=35.98482590745207,-115.04416446162207' target='_blank'>Nov 2022</a></div>`)[0];
+                popup_f5ea20dc362065289d68f510d3308b98.setContent(html_9bc25abd0b32b38fe9ad083439f0833a);
+            
+        
+
+        marker_9df759e540ab22b780aa5e3178f56bd3.bindPopup(popup_f5ea20dc362065289d68f510d3308b98)
+        ;
+
+        
+    
+    
+                marker_9df759e540ab22b780aa5e3178f56bd3.setIcon(icon_0a84310cb5b75ce76fb7dc46e21827b8);
+            
+    
+            var marker_2b266cd3ec0535363fd69d0f715c4e58 = L.marker(
+                [36.00503498160792, -115.06768467962625],
+                {
+}
+            ).addTo(feature_group_eacf030be5eb5ce156d5fce79c8db4a7);
+        
+    
+            var icon_7f222bd389401852f5f63b0cf23d2ed2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6f9cf6c32999738e8af26278a4f8672c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_500b9f261a7df4b82029f38ce9a10c34 = $(`<div id="html_500b9f261a7df4b82029f38ce9a10c34" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.00503498160792,-115.06768467962625' target='_blank'>Dec 2022</a></div>`)[0];
+                popup_6f9cf6c32999738e8af26278a4f8672c.setContent(html_500b9f261a7df4b82029f38ce9a10c34);
+            
+        
+
+        marker_2b266cd3ec0535363fd69d0f715c4e58.bindPopup(popup_6f9cf6c32999738e8af26278a4f8672c)
+        ;
+
+        
+    
+    
+                marker_2b266cd3ec0535363fd69d0f715c4e58.setIcon(icon_7f222bd389401852f5f63b0cf23d2ed2);
+            
+    
+            var marker_ce11a34b6d7c374399152ebc35969497 = L.marker(
+                [35.97222434474846, -115.11814747224416],
+                {
+}
+            ).addTo(feature_group_eacf030be5eb5ce156d5fce79c8db4a7);
+        
+    
+            var icon_e290b61954e68c77053650e9166205db = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e45b0c0506bc6192cb2d0d78400bceb3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_861b34c7c43abc64f42ae0036c948240 = $(`<div id="html_861b34c7c43abc64f42ae0036c948240" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=35.97222434474846,-115.11814747224416' target='_blank'>Dec 2022</a></div>`)[0];
+                popup_e45b0c0506bc6192cb2d0d78400bceb3.setContent(html_861b34c7c43abc64f42ae0036c948240);
+            
+        
+
+        marker_ce11a34b6d7c374399152ebc35969497.bindPopup(popup_e45b0c0506bc6192cb2d0d78400bceb3)
+        ;
+
+        
+    
+    
+                marker_ce11a34b6d7c374399152ebc35969497.setIcon(icon_e290b61954e68c77053650e9166205db);
+            
+    
+            var marker_ddd617d16c8c1b6c1f3c8b9d124a2364 = L.marker(
+                [36.026982581229504, -115.12125013757374],
+                {
+}
+            ).addTo(feature_group_eacf030be5eb5ce156d5fce79c8db4a7);
+        
+    
+            var icon_f2fbafe291e9fae36066a46f815de0f6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ab688059f9878295ca8c7620d897156d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e39a25d1c74f21e0fcacfa3f7d5901e9 = $(`<div id="html_e39a25d1c74f21e0fcacfa3f7d5901e9" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.026982581229504,-115.12125013757374' target='_blank'>Nov 2022</a></div>`)[0];
+                popup_ab688059f9878295ca8c7620d897156d.setContent(html_e39a25d1c74f21e0fcacfa3f7d5901e9);
+            
+        
+
+        marker_ddd617d16c8c1b6c1f3c8b9d124a2364.bindPopup(popup_ab688059f9878295ca8c7620d897156d)
+        ;
+
+        
+    
+    
+                marker_ddd617d16c8c1b6c1f3c8b9d124a2364.setIcon(icon_f2fbafe291e9fae36066a46f815de0f6);
+            
+    
+            var marker_3821bb3bd503a0ba39253cbb58730519 = L.marker(
+                [36.028734997530364, -115.04343733955727],
+                {
+}
+            ).addTo(feature_group_eacf030be5eb5ce156d5fce79c8db4a7);
+        
+    
+            var icon_7ab2a3f22d1d2f0c46fae8f6816410b7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d997c9a7eb617d9a3d6716395c7f8a0e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_30eae294a14c6e7346a8f1a8a78cb2cb = $(`<div id="html_30eae294a14c6e7346a8f1a8a78cb2cb" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.028734997530364,-115.04343733955727' target='_blank'>Nov 2022</a></div>`)[0];
+                popup_d997c9a7eb617d9a3d6716395c7f8a0e.setContent(html_30eae294a14c6e7346a8f1a8a78cb2cb);
+            
+        
+
+        marker_3821bb3bd503a0ba39253cbb58730519.bindPopup(popup_d997c9a7eb617d9a3d6716395c7f8a0e)
+        ;
+
+        
+    
+    
+                marker_3821bb3bd503a0ba39253cbb58730519.setIcon(icon_7ab2a3f22d1d2f0c46fae8f6816410b7);
+            
+    
+            var marker_8d88a6e5b377c9d50cead049ef785434 = L.marker(
+                [36.00607296896349, -115.06277528381123],
+                {
+}
+            ).addTo(feature_group_eacf030be5eb5ce156d5fce79c8db4a7);
+        
+    
+            var icon_004b71938450e7b4eb7d9009ca9066fe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bc85b5f8b4d91db8b9aaeac3b6d47ce4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_32272bea6aa47ef304703ae03f498ffa = $(`<div id="html_32272bea6aa47ef304703ae03f498ffa" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.00607296896349,-115.06277528381123' target='_blank'>Nov 2022</a></div>`)[0];
+                popup_bc85b5f8b4d91db8b9aaeac3b6d47ce4.setContent(html_32272bea6aa47ef304703ae03f498ffa);
+            
+        
+
+        marker_8d88a6e5b377c9d50cead049ef785434.bindPopup(popup_bc85b5f8b4d91db8b9aaeac3b6d47ce4)
+        ;
+
+        
+    
+    
+                marker_8d88a6e5b377c9d50cead049ef785434.setIcon(icon_004b71938450e7b4eb7d9009ca9066fe);
+            
+    
+            var marker_366c04303e264ca38573089c061abef7 = L.marker(
+                [36.063512611959084, -115.07897544050127],
+                {
+}
+            ).addTo(feature_group_eacf030be5eb5ce156d5fce79c8db4a7);
+        
+    
+            var icon_9544a431be0777fb73b29a65782cbb66 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_95a8d894ff5313bbab88922a74321254 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7effce723827a48bdd51a27122bcc3c0 = $(`<div id="html_7effce723827a48bdd51a27122bcc3c0" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.063512611959084,-115.07897544050127' target='_blank'>Dec 2022</a></div>`)[0];
+                popup_95a8d894ff5313bbab88922a74321254.setContent(html_7effce723827a48bdd51a27122bcc3c0);
+            
+        
+
+        marker_366c04303e264ca38573089c061abef7.bindPopup(popup_95a8d894ff5313bbab88922a74321254)
+        ;
+
+        
+    
+    
+                marker_366c04303e264ca38573089c061abef7.setIcon(icon_9544a431be0777fb73b29a65782cbb66);
+            
+    
+            var marker_3fc3ba7277bb7a1aa4d44a41665c25c8 = L.marker(
+                [36.063490970623384, -115.10619072054396],
+                {
+}
+            ).addTo(feature_group_eacf030be5eb5ce156d5fce79c8db4a7);
+        
+    
+            var icon_8a2890de916dc6daae1d8235ab109d5e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e14edae489cbfa40fe7fe29299d6d369 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6d6d174ff7a5d6da7da5b645403fcbe3 = $(`<div id="html_6d6d174ff7a5d6da7da5b645403fcbe3" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.063490970623384,-115.10619072054396' target='_blank'>Jun 2022</a></div>`)[0];
+                popup_e14edae489cbfa40fe7fe29299d6d369.setContent(html_6d6d174ff7a5d6da7da5b645403fcbe3);
+            
+        
+
+        marker_3fc3ba7277bb7a1aa4d44a41665c25c8.bindPopup(popup_e14edae489cbfa40fe7fe29299d6d369)
+        ;
+
+        
+    
+    
+                marker_3fc3ba7277bb7a1aa4d44a41665c25c8.setIcon(icon_8a2890de916dc6daae1d8235ab109d5e);
+            
+    
+            var marker_6f69d9844991c2b824ef49cd04e89356 = L.marker(
+                [36.06286345120923, -115.10391615668048],
+                {
+}
+            ).addTo(feature_group_eacf030be5eb5ce156d5fce79c8db4a7);
+        
+    
+            var icon_97b31fdfb2fca6a6b83f52d8c8677b6e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cc51d82dc37cd41a442d316bf0c133a0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5b20b05a6b4ec22d520fcfc913a8b342 = $(`<div id="html_5b20b05a6b4ec22d520fcfc913a8b342" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.06286345120923,-115.10391615668048' target='_blank'>Nov 2022</a></div>`)[0];
+                popup_cc51d82dc37cd41a442d316bf0c133a0.setContent(html_5b20b05a6b4ec22d520fcfc913a8b342);
+            
+        
+
+        marker_6f69d9844991c2b824ef49cd04e89356.bindPopup(popup_cc51d82dc37cd41a442d316bf0c133a0)
+        ;
+
+        
+    
+    
+                marker_6f69d9844991c2b824ef49cd04e89356.setIcon(icon_97b31fdfb2fca6a6b83f52d8c8677b6e);
+            
+    
+            var marker_3ba5d6c11ed1223ad4723db8fbe634d2 = L.marker(
+                [36.05634139133648, -115.08984506476884],
+                {
+}
+            ).addTo(feature_group_eacf030be5eb5ce156d5fce79c8db4a7);
+        
+    
+            var icon_487f6ea58da02f193835f7d571c27fa4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_67203a8024798f5479b54ead5b8f27ca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fb5137b78139a57a66e54dc11e996ead = $(`<div id="html_fb5137b78139a57a66e54dc11e996ead" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.05634139133648,-115.08984506476884' target='_blank'>Dec 2022</a></div>`)[0];
+                popup_67203a8024798f5479b54ead5b8f27ca.setContent(html_fb5137b78139a57a66e54dc11e996ead);
+            
+        
+
+        marker_3ba5d6c11ed1223ad4723db8fbe634d2.bindPopup(popup_67203a8024798f5479b54ead5b8f27ca)
+        ;
+
+        
+    
+    
+                marker_3ba5d6c11ed1223ad4723db8fbe634d2.setIcon(icon_487f6ea58da02f193835f7d571c27fa4);
+            
+    
+            var marker_7269544ae7ba3f78b533e6bc2302b6dc = L.marker(
+                [35.98206458854469, -115.13017951210429],
+                {
+}
+            ).addTo(feature_group_eacf030be5eb5ce156d5fce79c8db4a7);
+        
+    
+            var icon_6e34ed11598a2b31bbb30c2b22c99db5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1e3f8df909807a10f86a03ce3d8847b5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0efd5700ad24f7f085a82c94c6c67b89 = $(`<div id="html_0efd5700ad24f7f085a82c94c6c67b89" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=35.98206458854469,-115.13017951210429' target='_blank'>Dec 2022</a></div>`)[0];
+                popup_1e3f8df909807a10f86a03ce3d8847b5.setContent(html_0efd5700ad24f7f085a82c94c6c67b89);
+            
+        
+
+        marker_7269544ae7ba3f78b533e6bc2302b6dc.bindPopup(popup_1e3f8df909807a10f86a03ce3d8847b5)
+        ;
+
+        
+    
+    
+                marker_7269544ae7ba3f78b533e6bc2302b6dc.setIcon(icon_6e34ed11598a2b31bbb30c2b22c99db5);
+            
+    
+            var marker_a822e698c1efe0985a071f32f723bf0c = L.marker(
+                [35.98738432350065, -115.04506803378099],
+                {
+}
+            ).addTo(feature_group_eacf030be5eb5ce156d5fce79c8db4a7);
+        
+    
+            var icon_3e04fbaa04b3216ef66e6d133193b12e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_69ea29e8022bfaa27ba6e38f290f28d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_023c4ca8456076a1a51d61d158f75fd5 = $(`<div id="html_023c4ca8456076a1a51d61d158f75fd5" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=35.98738432350065,-115.04506803378099' target='_blank'>Jun 2022</a></div>`)[0];
+                popup_69ea29e8022bfaa27ba6e38f290f28d0.setContent(html_023c4ca8456076a1a51d61d158f75fd5);
+            
+        
+
+        marker_a822e698c1efe0985a071f32f723bf0c.bindPopup(popup_69ea29e8022bfaa27ba6e38f290f28d0)
+        ;
+
+        
+    
+    
+                marker_a822e698c1efe0985a071f32f723bf0c.setIcon(icon_3e04fbaa04b3216ef66e6d133193b12e);
+            
+    
+            var marker_6a1166a83e8b96017aadec762a9ac74f = L.marker(
+                [36.06646584729605, -115.08048323774499],
+                {
+}
+            ).addTo(feature_group_eacf030be5eb5ce156d5fce79c8db4a7);
+        
+    
+            var icon_d82b6d0dda2b982211ba065b316c740c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2d8651d06240510b1ece3da1fa442eff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_25b0233117fd7630e959b7d1ead339b7 = $(`<div id="html_25b0233117fd7630e959b7d1ead339b7" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.06646584729605,-115.08048323774499' target='_blank'>Dec 2022</a></div>`)[0];
+                popup_2d8651d06240510b1ece3da1fa442eff.setContent(html_25b0233117fd7630e959b7d1ead339b7);
+            
+        
+
+        marker_6a1166a83e8b96017aadec762a9ac74f.bindPopup(popup_2d8651d06240510b1ece3da1fa442eff)
+        ;
+
+        
+    
+    
+                marker_6a1166a83e8b96017aadec762a9ac74f.setIcon(icon_d82b6d0dda2b982211ba065b316c740c);
+            
+    
+            var marker_4e19c974edc0dafaef92a7546db5a2d7 = L.marker(
+                [36.040273071078545, -115.11526937751192],
+                {
+}
+            ).addTo(feature_group_eacf030be5eb5ce156d5fce79c8db4a7);
+        
+    
+            var icon_4591ea13b55a319f59084f03ad1f24e9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d1c4cdcbba9f7debda02292ec0837179 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e3aed4df806c9c68d5651d20aa4109ac = $(`<div id="html_e3aed4df806c9c68d5651d20aa4109ac" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.040273071078545,-115.11526937751192' target='_blank'>Dec 2022</a></div>`)[0];
+                popup_d1c4cdcbba9f7debda02292ec0837179.setContent(html_e3aed4df806c9c68d5651d20aa4109ac);
+            
+        
+
+        marker_4e19c974edc0dafaef92a7546db5a2d7.bindPopup(popup_d1c4cdcbba9f7debda02292ec0837179)
+        ;
+
+        
+    
+    
+                marker_4e19c974edc0dafaef92a7546db5a2d7.setIcon(icon_4591ea13b55a319f59084f03ad1f24e9);
+            
+    
+            var marker_1d8ef0c4da7dbd18b89bf78cbd2ad514 = L.marker(
+                [35.996391320673744, -115.07705545662296],
+                {
+}
+            ).addTo(feature_group_eacf030be5eb5ce156d5fce79c8db4a7);
+        
+    
+            var icon_bfdce2a0e989a8bb65cd705b5549b88a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0f2c293c15f94e34ccaf69289b342ae0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_37697305587ebdbe9d4670f9c0b0cba7 = $(`<div id="html_37697305587ebdbe9d4670f9c0b0cba7" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=35.996391320673744,-115.07705545662296' target='_blank'>Dec 2022</a></div>`)[0];
+                popup_0f2c293c15f94e34ccaf69289b342ae0.setContent(html_37697305587ebdbe9d4670f9c0b0cba7);
+            
+        
+
+        marker_1d8ef0c4da7dbd18b89bf78cbd2ad514.bindPopup(popup_0f2c293c15f94e34ccaf69289b342ae0)
+        ;
+
+        
+    
+    
+                marker_1d8ef0c4da7dbd18b89bf78cbd2ad514.setIcon(icon_bfdce2a0e989a8bb65cd705b5549b88a);
+            
+    
+            var marker_3f1d8fe7590ca70367bc9cc8ccaa52c5 = L.marker(
+                [36.01040440721401, -115.12641167474132],
+                {
+}
+            ).addTo(feature_group_eacf030be5eb5ce156d5fce79c8db4a7);
+        
+    
+            var icon_e3cb2a733f50cec8b436c872905be83f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_61d4c4ebb0e73d5fe692fc7da5cd476b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a8525020a7ee8639bf81471a1eae3f2f = $(`<div id="html_a8525020a7ee8639bf81471a1eae3f2f" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.01040440721401,-115.12641167474132' target='_blank'>Dec 2022</a></div>`)[0];
+                popup_61d4c4ebb0e73d5fe692fc7da5cd476b.setContent(html_a8525020a7ee8639bf81471a1eae3f2f);
+            
+        
+
+        marker_3f1d8fe7590ca70367bc9cc8ccaa52c5.bindPopup(popup_61d4c4ebb0e73d5fe692fc7da5cd476b)
+        ;
+
+        
+    
+    
+                marker_3f1d8fe7590ca70367bc9cc8ccaa52c5.setIcon(icon_e3cb2a733f50cec8b436c872905be83f);
+            
+    
+            var marker_aedd001b845c45a5df16ea18a92babd6 = L.marker(
+                [35.98185398234435, -115.14079227289518],
+                {
+}
+            ).addTo(feature_group_eacf030be5eb5ce156d5fce79c8db4a7);
+        
+    
+            var icon_60e5f20b197972cb23b33bf560bde8f7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ce35e23d483a93eef55711a58ce353bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1ddafad604fd730669153a793ab9c15a = $(`<div id="html_1ddafad604fd730669153a793ab9c15a" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=35.98185398234435,-115.14079227289518' target='_blank'>Dec 2022</a></div>`)[0];
+                popup_ce35e23d483a93eef55711a58ce353bc.setContent(html_1ddafad604fd730669153a793ab9c15a);
+            
+        
+
+        marker_aedd001b845c45a5df16ea18a92babd6.bindPopup(popup_ce35e23d483a93eef55711a58ce353bc)
+        ;
+
+        
+    
+    
+                marker_aedd001b845c45a5df16ea18a92babd6.setIcon(icon_60e5f20b197972cb23b33bf560bde8f7);
+            
+    
+            var marker_9026ba78bbb332c132eafce889d6fcd8 = L.marker(
+                [36.02634864864354, -115.05616798654705],
+                {
+}
+            ).addTo(feature_group_eacf030be5eb5ce156d5fce79c8db4a7);
+        
+    
+            var icon_bd005e8cfb118b3f5ea79e6c829facc5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bfae36e382115107a421e4bd2f1b617e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_11a1b8409883bf013dd9c5dd27612c46 = $(`<div id="html_11a1b8409883bf013dd9c5dd27612c46" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.02634864864354,-115.05616798654705' target='_blank'>Dec 2022</a></div>`)[0];
+                popup_bfae36e382115107a421e4bd2f1b617e.setContent(html_11a1b8409883bf013dd9c5dd27612c46);
+            
+        
+
+        marker_9026ba78bbb332c132eafce889d6fcd8.bindPopup(popup_bfae36e382115107a421e4bd2f1b617e)
+        ;
+
+        
+    
+    
+                marker_9026ba78bbb332c132eafce889d6fcd8.setIcon(icon_bd005e8cfb118b3f5ea79e6c829facc5);
+            
+    
+            var marker_2e38bfe55654fb3d34ad85b3c074b5d7 = L.marker(
+                [36.01718356569978, -115.0762640130857],
+                {
+}
+            ).addTo(feature_group_eacf030be5eb5ce156d5fce79c8db4a7);
+        
+    
+            var icon_37a0a7c8ebd17e0a52342608d740c683 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d0fd9f19ad53dce951d95b294bfc8a5d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_29fe4aecb62545658327f89a05139d67 = $(`<div id="html_29fe4aecb62545658327f89a05139d67" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.01718356569978,-115.0762640130857' target='_blank'>Nov 2022</a></div>`)[0];
+                popup_d0fd9f19ad53dce951d95b294bfc8a5d.setContent(html_29fe4aecb62545658327f89a05139d67);
+            
+        
+
+        marker_2e38bfe55654fb3d34ad85b3c074b5d7.bindPopup(popup_d0fd9f19ad53dce951d95b294bfc8a5d)
+        ;
+
+        
+    
+    
+                marker_2e38bfe55654fb3d34ad85b3c074b5d7.setIcon(icon_37a0a7c8ebd17e0a52342608d740c683);
+            
+    
+            var marker_f41122a8a529fd12a60c2223b321e4ac = L.marker(
+                [36.012843547674365, -115.09677596159533],
+                {
+}
+            ).addTo(feature_group_eacf030be5eb5ce156d5fce79c8db4a7);
+        
+    
+            var icon_519c33d25e7db3eb20556208b15b6273 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_73180522890fbb390e0575d5df5e13f2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9d33a0b6c3ede383b3b549d95f4ec910 = $(`<div id="html_9d33a0b6c3ede383b3b549d95f4ec910" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.012843547674365,-115.09677596159533' target='_blank'>Dec 2022</a></div>`)[0];
+                popup_73180522890fbb390e0575d5df5e13f2.setContent(html_9d33a0b6c3ede383b3b549d95f4ec910);
+            
+        
+
+        marker_f41122a8a529fd12a60c2223b321e4ac.bindPopup(popup_73180522890fbb390e0575d5df5e13f2)
+        ;
+
+        
+    
+    
+                marker_f41122a8a529fd12a60c2223b321e4ac.setIcon(icon_519c33d25e7db3eb20556208b15b6273);
+            
+    
+            var marker_1d78cd6ea19923d7991a2159bd40b0f2 = L.marker(
+                [36.061859847549925, -115.06029355867965],
+                {
+}
+            ).addTo(feature_group_eacf030be5eb5ce156d5fce79c8db4a7);
+        
+    
+            var icon_fdd85e13f4d4b1772c7c8d0c968d14e7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c0a7782f870af07826081321b36fcb8c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8144f936470811ad67d128cd969fff5e = $(`<div id="html_8144f936470811ad67d128cd969fff5e" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.061859847549925,-115.06029355867965' target='_blank'>Dec 2022</a></div>`)[0];
+                popup_c0a7782f870af07826081321b36fcb8c.setContent(html_8144f936470811ad67d128cd969fff5e);
+            
+        
+
+        marker_1d78cd6ea19923d7991a2159bd40b0f2.bindPopup(popup_c0a7782f870af07826081321b36fcb8c)
+        ;
+
+        
+    
+    
+                marker_1d78cd6ea19923d7991a2159bd40b0f2.setIcon(icon_fdd85e13f4d4b1772c7c8d0c968d14e7);
+            
+    
+            var marker_35e9dccd618ac72d078ea6b5e7ff2442 = L.marker(
+                [36.022055942609484, -115.13863002961472],
+                {
+}
+            ).addTo(feature_group_eacf030be5eb5ce156d5fce79c8db4a7);
+        
+    
+            var icon_1228161d63d347fa37e5be66c8d52af6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2cbdcbad1f95b4edec1350f0de4a4a0b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8bfc9703e4ca143e656debbab6239e19 = $(`<div id="html_8bfc9703e4ca143e656debbab6239e19" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.022055942609484,-115.13863002961472' target='_blank'>Dec 2022</a></div>`)[0];
+                popup_2cbdcbad1f95b4edec1350f0de4a4a0b.setContent(html_8bfc9703e4ca143e656debbab6239e19);
+            
+        
+
+        marker_35e9dccd618ac72d078ea6b5e7ff2442.bindPopup(popup_2cbdcbad1f95b4edec1350f0de4a4a0b)
+        ;
+
+        
+    
+    
+                marker_35e9dccd618ac72d078ea6b5e7ff2442.setIcon(icon_1228161d63d347fa37e5be66c8d52af6);
+            
+    
+            var marker_8288c8f54a00d2fd6a5dbec5561f2dae = L.marker(
+                [36.01063463526041, -115.12996672012797],
+                {
+}
+            ).addTo(feature_group_eacf030be5eb5ce156d5fce79c8db4a7);
+        
+    
+            var icon_5c98cbd8ce4d6d8955c928e749dc31c0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a003e983706ad87bdeb6cfccbf878b77 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6abed127570a4946689e7e6394f486ca = $(`<div id="html_6abed127570a4946689e7e6394f486ca" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.01063463526041,-115.12996672012797' target='_blank'>Nov 2022</a></div>`)[0];
+                popup_a003e983706ad87bdeb6cfccbf878b77.setContent(html_6abed127570a4946689e7e6394f486ca);
+            
+        
+
+        marker_8288c8f54a00d2fd6a5dbec5561f2dae.bindPopup(popup_a003e983706ad87bdeb6cfccbf878b77)
+        ;
+
+        
+    
+    
+                marker_8288c8f54a00d2fd6a5dbec5561f2dae.setIcon(icon_5c98cbd8ce4d6d8955c928e749dc31c0);
+            
+    
+            var marker_ba25fd976d4afa7f88009f37c6436797 = L.marker(
+                [36.01976509136649, -115.05349201476272],
+                {
+}
+            ).addTo(feature_group_eacf030be5eb5ce156d5fce79c8db4a7);
+        
+    
+            var icon_9ac3e7d263a5af9325ada82e0ff8be6a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3bdccec3594d3f509b8f3b835568f66f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5aa4fa67f48c162a02ce455c81e9405b = $(`<div id="html_5aa4fa67f48c162a02ce455c81e9405b" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.01976509136649,-115.05349201476272' target='_blank'>Jun 2022</a></div>`)[0];
+                popup_3bdccec3594d3f509b8f3b835568f66f.setContent(html_5aa4fa67f48c162a02ce455c81e9405b);
+            
+        
+
+        marker_ba25fd976d4afa7f88009f37c6436797.bindPopup(popup_3bdccec3594d3f509b8f3b835568f66f)
+        ;
+
+        
+    
+    
+                marker_ba25fd976d4afa7f88009f37c6436797.setIcon(icon_9ac3e7d263a5af9325ada82e0ff8be6a);
+            
+    
+            var marker_1378b8da7979416e2fae73d7e0fce3e3 = L.marker(
+                [35.978070411824156, -115.05207325890356],
+                {
+}
+            ).addTo(feature_group_eacf030be5eb5ce156d5fce79c8db4a7);
+        
+    
+            var icon_abf7f59a19f9fb34d4cf790507539f35 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_22dbf643e3b8bca386c1306e068207d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e53f3db3c3a6c003735b007fc94ae06d = $(`<div id="html_e53f3db3c3a6c003735b007fc94ae06d" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=35.978070411824156,-115.05207325890356' target='_blank'>Dec 2022</a></div>`)[0];
+                popup_22dbf643e3b8bca386c1306e068207d7.setContent(html_e53f3db3c3a6c003735b007fc94ae06d);
+            
+        
+
+        marker_1378b8da7979416e2fae73d7e0fce3e3.bindPopup(popup_22dbf643e3b8bca386c1306e068207d7)
+        ;
+
+        
+    
+    
+                marker_1378b8da7979416e2fae73d7e0fce3e3.setIcon(icon_abf7f59a19f9fb34d4cf790507539f35);
+            
+    
+            var marker_b972cb92f8d1c05bc6b3e1377640f0e3 = L.marker(
+                [36.059729997190814, -115.11374104582269],
+                {
+}
+            ).addTo(feature_group_eacf030be5eb5ce156d5fce79c8db4a7);
+        
+    
+            var icon_e75b846b34e5d8be180f616b24455af6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_303f5e2c266b73fdba4c3e8a6b725a08 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_33b5f6ed28aa0cb525dc59b4cf971ab6 = $(`<div id="html_33b5f6ed28aa0cb525dc59b4cf971ab6" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.059729997190814,-115.11374104582269' target='_blank'>Nov 2022</a></div>`)[0];
+                popup_303f5e2c266b73fdba4c3e8a6b725a08.setContent(html_33b5f6ed28aa0cb525dc59b4cf971ab6);
+            
+        
+
+        marker_b972cb92f8d1c05bc6b3e1377640f0e3.bindPopup(popup_303f5e2c266b73fdba4c3e8a6b725a08)
+        ;
+
+        
+    
+    
+                marker_b972cb92f8d1c05bc6b3e1377640f0e3.setIcon(icon_e75b846b34e5d8be180f616b24455af6);
+            
+    
+            var marker_587d3e98802eb376c0bd2a7156bd65a1 = L.marker(
+                [35.999935699990026, -115.112652098312],
+                {
+}
+            ).addTo(feature_group_eacf030be5eb5ce156d5fce79c8db4a7);
+        
+    
+            var icon_846526c6ea6ba5fca8ece9936eeab13e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_88d7defad4ba362b783ef9587705e3bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eca3a9735c576417e2ffe4653bb3f1d2 = $(`<div id="html_eca3a9735c576417e2ffe4653bb3f1d2" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=35.999935699990026,-115.112652098312' target='_blank'>Dec 2022</a></div>`)[0];
+                popup_88d7defad4ba362b783ef9587705e3bc.setContent(html_eca3a9735c576417e2ffe4653bb3f1d2);
+            
+        
+
+        marker_587d3e98802eb376c0bd2a7156bd65a1.bindPopup(popup_88d7defad4ba362b783ef9587705e3bc)
+        ;
+
+        
+    
+    
+                marker_587d3e98802eb376c0bd2a7156bd65a1.setIcon(icon_846526c6ea6ba5fca8ece9936eeab13e);
+            
+    
+            var marker_6a6e639a68d51c851641fb1786fdf5fd = L.marker(
+                [36.0045266293818, -115.05721573167517],
+                {
+}
+            ).addTo(feature_group_eacf030be5eb5ce156d5fce79c8db4a7);
+        
+    
+            var icon_575be56e3108d784d96117f49a15c090 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8c151d45b245a53683dca320e5224254 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_768170bced93516a4448ee2adbb32afb = $(`<div id="html_768170bced93516a4448ee2adbb32afb" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.0045266293818,-115.05721573167517' target='_blank'>Jun 2022</a></div>`)[0];
+                popup_8c151d45b245a53683dca320e5224254.setContent(html_768170bced93516a4448ee2adbb32afb);
+            
+        
+
+        marker_6a6e639a68d51c851641fb1786fdf5fd.bindPopup(popup_8c151d45b245a53683dca320e5224254)
+        ;
+
+        
+    
+    
+                marker_6a6e639a68d51c851641fb1786fdf5fd.setIcon(icon_575be56e3108d784d96117f49a15c090);
+            
+    
+            var marker_2c3b340811ddf136ac33d31415b779ba = L.marker(
+                [36.05434292742362, -115.09821769232187],
+                {
+}
+            ).addTo(feature_group_eacf030be5eb5ce156d5fce79c8db4a7);
+        
+    
+            var icon_8a2d323b7314dbc7f0fb2e437b4052d4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_601413594b4702b8d47ce477c7b5fccb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0fc1dad59dc7fcbd6b5882016c54a31c = $(`<div id="html_0fc1dad59dc7fcbd6b5882016c54a31c" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.05434292742362,-115.09821769232187' target='_blank'>Nov 2022</a></div>`)[0];
+                popup_601413594b4702b8d47ce477c7b5fccb.setContent(html_0fc1dad59dc7fcbd6b5882016c54a31c);
+            
+        
+
+        marker_2c3b340811ddf136ac33d31415b779ba.bindPopup(popup_601413594b4702b8d47ce477c7b5fccb)
+        ;
+
+        
+    
+    
+                marker_2c3b340811ddf136ac33d31415b779ba.setIcon(icon_8a2d323b7314dbc7f0fb2e437b4052d4);
+            
+    
+            var marker_182a72147362daa7b7cbeda9aa43a302 = L.marker(
+                [36.00632330253309, -115.11300729048496],
+                {
+}
+            ).addTo(feature_group_eacf030be5eb5ce156d5fce79c8db4a7);
+        
+    
+            var icon_dc6cffe2880e57a700d0df2c916c8c22 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_970b51ac3991cf427fbae3c9251487d4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_16ae50df4436fc954d908d7a45c0242b = $(`<div id="html_16ae50df4436fc954d908d7a45c0242b" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.00632330253309,-115.11300729048496' target='_blank'>Dec 2022</a></div>`)[0];
+                popup_970b51ac3991cf427fbae3c9251487d4.setContent(html_16ae50df4436fc954d908d7a45c0242b);
+            
+        
+
+        marker_182a72147362daa7b7cbeda9aa43a302.bindPopup(popup_970b51ac3991cf427fbae3c9251487d4)
+        ;
+
+        
+    
+    
+                marker_182a72147362daa7b7cbeda9aa43a302.setIcon(icon_dc6cffe2880e57a700d0df2c916c8c22);
+            
+    
+            var marker_93670ff386772369bf34c3b23de9ac5c = L.marker(
+                [35.9931892594231, -115.11952462686585],
+                {
+}
+            ).addTo(feature_group_eacf030be5eb5ce156d5fce79c8db4a7);
+        
+    
+            var icon_69c187d8add908c55738dfc541db19dd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ff89cfd430863446b829fc291f350022 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5e49a69f9f5542c90c1c82befc9a0602 = $(`<div id="html_5e49a69f9f5542c90c1c82befc9a0602" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=35.9931892594231,-115.11952462686585' target='_blank'>Nov 2022</a></div>`)[0];
+                popup_ff89cfd430863446b829fc291f350022.setContent(html_5e49a69f9f5542c90c1c82befc9a0602);
+            
+        
+
+        marker_93670ff386772369bf34c3b23de9ac5c.bindPopup(popup_ff89cfd430863446b829fc291f350022)
+        ;
+
+        
+    
+    
+                marker_93670ff386772369bf34c3b23de9ac5c.setIcon(icon_69c187d8add908c55738dfc541db19dd);
+            
+    
+            var marker_2d924576313f30d33c94a25e33132aa2 = L.marker(
+                [35.98226410394076, -115.12115908330607],
+                {
+}
+            ).addTo(feature_group_eacf030be5eb5ce156d5fce79c8db4a7);
+        
+    
+            var icon_b9897a00dfd16948b84fbf18a5f3244f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_47159ae9e9da9f93d530dbfe2a26338f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_721691109a5b616a0c600067620f9093 = $(`<div id="html_721691109a5b616a0c600067620f9093" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=35.98226410394076,-115.12115908330607' target='_blank'>Nov 2022</a></div>`)[0];
+                popup_47159ae9e9da9f93d530dbfe2a26338f.setContent(html_721691109a5b616a0c600067620f9093);
+            
+        
+
+        marker_2d924576313f30d33c94a25e33132aa2.bindPopup(popup_47159ae9e9da9f93d530dbfe2a26338f)
+        ;
+
+        
+    
+    
+                marker_2d924576313f30d33c94a25e33132aa2.setIcon(icon_b9897a00dfd16948b84fbf18a5f3244f);
+            
+    
+            var marker_d04ebdaa576f59ceb8638b28cba0994d = L.marker(
+                [35.99560729047092, -115.0870109518566],
+                {
+}
+            ).addTo(feature_group_eacf030be5eb5ce156d5fce79c8db4a7);
+        
+    
+            var icon_6a8ecb176e5838d4f3150372d8b481e8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1af9ef4c6a2e7785e5a15d831b225cfb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fbb99fb90f3cd604b4dbe04754e6696c = $(`<div id="html_fbb99fb90f3cd604b4dbe04754e6696c" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=35.99560729047092,-115.0870109518566' target='_blank'>Nov 2022</a></div>`)[0];
+                popup_1af9ef4c6a2e7785e5a15d831b225cfb.setContent(html_fbb99fb90f3cd604b4dbe04754e6696c);
+            
+        
+
+        marker_d04ebdaa576f59ceb8638b28cba0994d.bindPopup(popup_1af9ef4c6a2e7785e5a15d831b225cfb)
+        ;
+
+        
+    
+    
+                marker_d04ebdaa576f59ceb8638b28cba0994d.setIcon(icon_6a8ecb176e5838d4f3150372d8b481e8);
+            
+    
+            var marker_3ec4a7ad7d192441bc40c94270e47f8a = L.marker(
+                [36.00388934023778, -115.0712441948855],
+                {
+}
+            ).addTo(feature_group_eacf030be5eb5ce156d5fce79c8db4a7);
+        
+    
+            var icon_2eee14bf571480d7c331b6c24a235cef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e3164a2c1ba7726c52fc0ef576ea8797 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_20d719650343a84ca33874e5ebc32414 = $(`<div id="html_20d719650343a84ca33874e5ebc32414" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.00388934023778,-115.0712441948855' target='_blank'>Dec 2022</a></div>`)[0];
+                popup_e3164a2c1ba7726c52fc0ef576ea8797.setContent(html_20d719650343a84ca33874e5ebc32414);
+            
+        
+
+        marker_3ec4a7ad7d192441bc40c94270e47f8a.bindPopup(popup_e3164a2c1ba7726c52fc0ef576ea8797)
+        ;
+
+        
+    
+    
+                marker_3ec4a7ad7d192441bc40c94270e47f8a.setIcon(icon_2eee14bf571480d7c331b6c24a235cef);
+            
+    
+            var marker_8e918bd30c69737b5e64210f363b11e1 = L.marker(
+                [36.01427971797163, -115.0791998079323],
+                {
+}
+            ).addTo(feature_group_eacf030be5eb5ce156d5fce79c8db4a7);
+        
+    
+            var icon_feb0ecc3a88e0021d558e4a1264d775d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8723ef6019b1f55c3ec885c908e4dedd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a3ff85909d3c01ef0bcdea2b1405199d = $(`<div id="html_a3ff85909d3c01ef0bcdea2b1405199d" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.01427971797163,-115.0791998079323' target='_blank'>Dec 2022</a></div>`)[0];
+                popup_8723ef6019b1f55c3ec885c908e4dedd.setContent(html_a3ff85909d3c01ef0bcdea2b1405199d);
+            
+        
+
+        marker_8e918bd30c69737b5e64210f363b11e1.bindPopup(popup_8723ef6019b1f55c3ec885c908e4dedd)
+        ;
+
+        
+    
+    
+                marker_8e918bd30c69737b5e64210f363b11e1.setIcon(icon_feb0ecc3a88e0021d558e4a1264d775d);
+            
+    
+            var marker_2b05d1453e181296a678ce9d82df4b7c = L.marker(
+                [35.98429093535407, -115.13388362732923],
+                {
+}
+            ).addTo(feature_group_eacf030be5eb5ce156d5fce79c8db4a7);
+        
+    
+            var icon_c6b9e4ddf9891ff25169a968f2d212aa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b4d82dd64ca4f96642683a77ec6103bb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dc49bc253ce079176557290063cb9cbe = $(`<div id="html_dc49bc253ce079176557290063cb9cbe" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=35.98429093535407,-115.13388362732923' target='_blank'>Nov 2022</a></div>`)[0];
+                popup_b4d82dd64ca4f96642683a77ec6103bb.setContent(html_dc49bc253ce079176557290063cb9cbe);
+            
+        
+
+        marker_2b05d1453e181296a678ce9d82df4b7c.bindPopup(popup_b4d82dd64ca4f96642683a77ec6103bb)
+        ;
+
+        
+    
+    
+                marker_2b05d1453e181296a678ce9d82df4b7c.setIcon(icon_c6b9e4ddf9891ff25169a968f2d212aa);
+            
+    
+            feature_group_eacf030be5eb5ce156d5fce79c8db4a7.addTo(map_ba293039fb77f11786cd1fd42c0f0c39);
+        
+    
+            var feature_group_8ab9ac0cd8f48585333750ca47be2807 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_247025a00fb51def1d6dd4bf99834847 = L.marker(
+                [36.0397848095434, -115.07496711668446],
+                {
+}
+            ).addTo(feature_group_8ab9ac0cd8f48585333750ca47be2807);
+        
+    
+            var icon_291037670e4bf22c296ceee1ff1ef2c0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_782d2846ca604a261280635847bda9f2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a57383987439b1aad0538fc0af8078ad = $(`<div id="html_a57383987439b1aad0538fc0af8078ad" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.0397848095434,-115.07496711668446' target='_blank'>Nov 2024</a></div>`)[0];
+                popup_782d2846ca604a261280635847bda9f2.setContent(html_a57383987439b1aad0538fc0af8078ad);
+            
+        
+
+        marker_247025a00fb51def1d6dd4bf99834847.bindPopup(popup_782d2846ca604a261280635847bda9f2)
+        ;
+
+        
+    
+    
+                marker_247025a00fb51def1d6dd4bf99834847.setIcon(icon_291037670e4bf22c296ceee1ff1ef2c0);
+            
+    
+            var marker_62136d3373bb26acc6c611d14e6da85a = L.marker(
+                [36.01714668867074, -115.04714192235582],
+                {
+}
+            ).addTo(feature_group_8ab9ac0cd8f48585333750ca47be2807);
+        
+    
+            var icon_173fd5f084c392e8e2adbefaa428b79e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ced1f94c5579deef43cc761b9067c8aa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d3ab6b58114fdbf43d8bd71abd4fecf5 = $(`<div id="html_d3ab6b58114fdbf43d8bd71abd4fecf5" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.01714668867074,-115.04714192235582' target='_blank'>Nov 2024</a></div>`)[0];
+                popup_ced1f94c5579deef43cc761b9067c8aa.setContent(html_d3ab6b58114fdbf43d8bd71abd4fecf5);
+            
+        
+
+        marker_62136d3373bb26acc6c611d14e6da85a.bindPopup(popup_ced1f94c5579deef43cc761b9067c8aa)
+        ;
+
+        
+    
+    
+                marker_62136d3373bb26acc6c611d14e6da85a.setIcon(icon_173fd5f084c392e8e2adbefaa428b79e);
+            
+    
+            var marker_2374361d28899a2c6d70c778d2ed9b2f = L.marker(
+                [36.049407704459135, -115.05138648193689],
+                {
+}
+            ).addTo(feature_group_8ab9ac0cd8f48585333750ca47be2807);
+        
+    
+            var icon_7af16bad314d4eed5f8671364e47d238 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ab121c51b429add1e16795b5666b7b73 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b5b024e3f6996c2ae81f054612613b46 = $(`<div id="html_b5b024e3f6996c2ae81f054612613b46" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.049407704459135,-115.05138648193689' target='_blank'>Nov 2024</a></div>`)[0];
+                popup_ab121c51b429add1e16795b5666b7b73.setContent(html_b5b024e3f6996c2ae81f054612613b46);
+            
+        
+
+        marker_2374361d28899a2c6d70c778d2ed9b2f.bindPopup(popup_ab121c51b429add1e16795b5666b7b73)
+        ;
+
+        
+    
+    
+                marker_2374361d28899a2c6d70c778d2ed9b2f.setIcon(icon_7af16bad314d4eed5f8671364e47d238);
+            
+    
+            var marker_9a538ef18fc9f72bc72c99a66aada688 = L.marker(
+                [36.00817581511529, -115.13120659145262],
+                {
+}
+            ).addTo(feature_group_8ab9ac0cd8f48585333750ca47be2807);
+        
+    
+            var icon_7e01fb041a3aacb19518339174365062 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_69ed861393e9454f43476a2c346ead40 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_18a3778c419910287cfaccf1d5ed3309 = $(`<div id="html_18a3778c419910287cfaccf1d5ed3309" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.00817581511529,-115.13120659145262' target='_blank'>Sep 2024</a></div>`)[0];
+                popup_69ed861393e9454f43476a2c346ead40.setContent(html_18a3778c419910287cfaccf1d5ed3309);
+            
+        
+
+        marker_9a538ef18fc9f72bc72c99a66aada688.bindPopup(popup_69ed861393e9454f43476a2c346ead40)
+        ;
+
+        
+    
+    
+                marker_9a538ef18fc9f72bc72c99a66aada688.setIcon(icon_7e01fb041a3aacb19518339174365062);
+            
+    
+            var marker_8c3561557a78aa29f637dadf70c81244 = L.marker(
+                [36.009325548932416, -115.05060704882936],
+                {
+}
+            ).addTo(feature_group_8ab9ac0cd8f48585333750ca47be2807);
+        
+    
+            var icon_c30a152be35f3988360c1e0952d3e24e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c9b5cca0cf252e4f1ce12cba83043db = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_de37afa77278ab627ecc545045b0c911 = $(`<div id="html_de37afa77278ab627ecc545045b0c911" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.009325548932416,-115.05060704882936' target='_blank'>Nov 2024</a></div>`)[0];
+                popup_3c9b5cca0cf252e4f1ce12cba83043db.setContent(html_de37afa77278ab627ecc545045b0c911);
+            
+        
+
+        marker_8c3561557a78aa29f637dadf70c81244.bindPopup(popup_3c9b5cca0cf252e4f1ce12cba83043db)
+        ;
+
+        
+    
+    
+                marker_8c3561557a78aa29f637dadf70c81244.setIcon(icon_c30a152be35f3988360c1e0952d3e24e);
+            
+    
+            var marker_9ec7414389f6ccb05ef810ba8512bc16 = L.marker(
+                [36.06262089489605, -115.10392627012236],
+                {
+}
+            ).addTo(feature_group_8ab9ac0cd8f48585333750ca47be2807);
+        
+    
+            var icon_7d242be484129620774ec2567206c8c1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3ccea8eab59a418d81b0b3605c5812ca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0306db19c0d3f2394855aa0056dde43f = $(`<div id="html_0306db19c0d3f2394855aa0056dde43f" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.06262089489605,-115.10392627012236' target='_blank'>Nov 2024</a></div>`)[0];
+                popup_3ccea8eab59a418d81b0b3605c5812ca.setContent(html_0306db19c0d3f2394855aa0056dde43f);
+            
+        
+
+        marker_9ec7414389f6ccb05ef810ba8512bc16.bindPopup(popup_3ccea8eab59a418d81b0b3605c5812ca)
+        ;
+
+        
+    
+    
+                marker_9ec7414389f6ccb05ef810ba8512bc16.setIcon(icon_7d242be484129620774ec2567206c8c1);
+            
+    
+            var marker_8b6815f8b4e84ba297154f35e502708a = L.marker(
+                [36.01120092397663, -115.06597432175722],
+                {
+}
+            ).addTo(feature_group_8ab9ac0cd8f48585333750ca47be2807);
+        
+    
+            var icon_ad01cfbe31c70877c2f55d6ff2fbe958 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d450b6172f9a0ebbbe6180cfd3c7c9bd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4c36e5a901494f56c7641b35f6e9200f = $(`<div id="html_4c36e5a901494f56c7641b35f6e9200f" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.01120092397663,-115.06597432175722' target='_blank'>Nov 2024</a></div>`)[0];
+                popup_d450b6172f9a0ebbbe6180cfd3c7c9bd.setContent(html_4c36e5a901494f56c7641b35f6e9200f);
+            
+        
+
+        marker_8b6815f8b4e84ba297154f35e502708a.bindPopup(popup_d450b6172f9a0ebbbe6180cfd3c7c9bd)
+        ;
+
+        
+    
+    
+                marker_8b6815f8b4e84ba297154f35e502708a.setIcon(icon_ad01cfbe31c70877c2f55d6ff2fbe958);
+            
+    
+            var marker_394e7415e4926796c26e37d1bf300f9b = L.marker(
+                [35.994089085347696, -115.12477703522319],
+                {
+}
+            ).addTo(feature_group_8ab9ac0cd8f48585333750ca47be2807);
+        
+    
+            var icon_8a368a0fa7d43bfb3871b2aded63133e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a0d0212ab6d91a7a9a2f774f8ad0c848 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1c42f0f60a15cfc1b7f852b67418f11a = $(`<div id="html_1c42f0f60a15cfc1b7f852b67418f11a" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=35.994089085347696,-115.12477703522319' target='_blank'>Sep 2024</a></div>`)[0];
+                popup_a0d0212ab6d91a7a9a2f774f8ad0c848.setContent(html_1c42f0f60a15cfc1b7f852b67418f11a);
+            
+        
+
+        marker_394e7415e4926796c26e37d1bf300f9b.bindPopup(popup_a0d0212ab6d91a7a9a2f774f8ad0c848)
+        ;
+
+        
+    
+    
+                marker_394e7415e4926796c26e37d1bf300f9b.setIcon(icon_8a368a0fa7d43bfb3871b2aded63133e);
+            
+    
+            var marker_6c05614f86cef59d97cc905f23326183 = L.marker(
+                [36.05759134972185, -115.05814475873566],
+                {
+}
+            ).addTo(feature_group_8ab9ac0cd8f48585333750ca47be2807);
+        
+    
+            var icon_d696820def6575a3e71c8cd2cafc7405 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d4e558611e01864fb7eccc4d9aa66e93 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7ec893fc0ba9373e72ad5eb621b2b947 = $(`<div id="html_7ec893fc0ba9373e72ad5eb621b2b947" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.05759134972185,-115.05814475873566' target='_blank'>Nov 2024</a></div>`)[0];
+                popup_d4e558611e01864fb7eccc4d9aa66e93.setContent(html_7ec893fc0ba9373e72ad5eb621b2b947);
+            
+        
+
+        marker_6c05614f86cef59d97cc905f23326183.bindPopup(popup_d4e558611e01864fb7eccc4d9aa66e93)
+        ;
+
+        
+    
+    
+                marker_6c05614f86cef59d97cc905f23326183.setIcon(icon_d696820def6575a3e71c8cd2cafc7405);
+            
+    
+            var marker_e6ff6acc087b2495feb3c295df14e62d = L.marker(
+                [35.999507816425286, -115.04392224836819],
+                {
+}
+            ).addTo(feature_group_8ab9ac0cd8f48585333750ca47be2807);
+        
+    
+            var icon_8ba457c0948d0d2585d69b4cb5e6cfcc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_832f73961a27a1a99e72919ef1797f56 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bdb100e064b3e664df2db9eb9cb5ef4f = $(`<div id="html_bdb100e064b3e664df2db9eb9cb5ef4f" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=35.999507816425286,-115.04392224836819' target='_blank'>Sep 2024</a></div>`)[0];
+                popup_832f73961a27a1a99e72919ef1797f56.setContent(html_bdb100e064b3e664df2db9eb9cb5ef4f);
+            
+        
+
+        marker_e6ff6acc087b2495feb3c295df14e62d.bindPopup(popup_832f73961a27a1a99e72919ef1797f56)
+        ;
+
+        
+    
+    
+                marker_e6ff6acc087b2495feb3c295df14e62d.setIcon(icon_8ba457c0948d0d2585d69b4cb5e6cfcc);
+            
+    
+            var marker_5d355d51fb9152ca59b45163ac04c0f3 = L.marker(
+                [36.02595576363653, -115.08175236600862],
+                {
+}
+            ).addTo(feature_group_8ab9ac0cd8f48585333750ca47be2807);
+        
+    
+            var icon_ec0f93d71fd665f169bd4e5db38c7eca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_52c90381c3171534c6d2c460e472e79c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d3e7574a6bfe7f6b0f7554172774d185 = $(`<div id="html_d3e7574a6bfe7f6b0f7554172774d185" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.02595576363653,-115.08175236600862' target='_blank'>Oct 2024</a></div>`)[0];
+                popup_52c90381c3171534c6d2c460e472e79c.setContent(html_d3e7574a6bfe7f6b0f7554172774d185);
+            
+        
+
+        marker_5d355d51fb9152ca59b45163ac04c0f3.bindPopup(popup_52c90381c3171534c6d2c460e472e79c)
+        ;
+
+        
+    
+    
+                marker_5d355d51fb9152ca59b45163ac04c0f3.setIcon(icon_ec0f93d71fd665f169bd4e5db38c7eca);
+            
+    
+            var marker_e058b0acaf13991b48922445dab3138d = L.marker(
+                [36.00588753594759, -115.09515012590136],
+                {
+}
+            ).addTo(feature_group_8ab9ac0cd8f48585333750ca47be2807);
+        
+    
+            var icon_85379ed7e56f6ccfa3e3621a75e2430f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_56bcb1e37c860ab954fe9feb460e08c1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_18741e9c013329c7f5d46cb36780ecb8 = $(`<div id="html_18741e9c013329c7f5d46cb36780ecb8" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.00588753594759,-115.09515012590136' target='_blank'>Sep 2024</a></div>`)[0];
+                popup_56bcb1e37c860ab954fe9feb460e08c1.setContent(html_18741e9c013329c7f5d46cb36780ecb8);
+            
+        
+
+        marker_e058b0acaf13991b48922445dab3138d.bindPopup(popup_56bcb1e37c860ab954fe9feb460e08c1)
+        ;
+
+        
+    
+    
+                marker_e058b0acaf13991b48922445dab3138d.setIcon(icon_85379ed7e56f6ccfa3e3621a75e2430f);
+            
+    
+            var marker_0c87538745f602a740855fa270c36b59 = L.marker(
+                [36.02127551356694, -115.11594263564521],
+                {
+}
+            ).addTo(feature_group_8ab9ac0cd8f48585333750ca47be2807);
+        
+    
+            var icon_f5d87e14e75eccf2c8288c1b78e4ce1a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_61824d3c44569705b3c445eb4036238c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_29342dae8f5bcb033b08372fd981599c = $(`<div id="html_29342dae8f5bcb033b08372fd981599c" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.02127551356694,-115.11594263564521' target='_blank'>Nov 2024</a></div>`)[0];
+                popup_61824d3c44569705b3c445eb4036238c.setContent(html_29342dae8f5bcb033b08372fd981599c);
+            
+        
+
+        marker_0c87538745f602a740855fa270c36b59.bindPopup(popup_61824d3c44569705b3c445eb4036238c)
+        ;
+
+        
+    
+    
+                marker_0c87538745f602a740855fa270c36b59.setIcon(icon_f5d87e14e75eccf2c8288c1b78e4ce1a);
+            
+    
+            var marker_6967c6e86df91490371ba985bc6a913a = L.marker(
+                [35.979796860798004, -115.09373736783151],
+                {
+}
+            ).addTo(feature_group_8ab9ac0cd8f48585333750ca47be2807);
+        
+    
+            var icon_aa7af732a8bf040c873161fc5042806f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d817fab1dc02c7239e74e7c5fec68307 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b47f171019e9a69fc8d7fd2882790bc7 = $(`<div id="html_b47f171019e9a69fc8d7fd2882790bc7" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=35.979796860798004,-115.09373736783151' target='_blank'>Oct 2024</a></div>`)[0];
+                popup_d817fab1dc02c7239e74e7c5fec68307.setContent(html_b47f171019e9a69fc8d7fd2882790bc7);
+            
+        
+
+        marker_6967c6e86df91490371ba985bc6a913a.bindPopup(popup_d817fab1dc02c7239e74e7c5fec68307)
+        ;
+
+        
+    
+    
+                marker_6967c6e86df91490371ba985bc6a913a.setIcon(icon_aa7af732a8bf040c873161fc5042806f);
+            
+    
+            var marker_dbaf5e46e8f97fc6839dd8eeed45ecdc = L.marker(
+                [35.993297421969736, -115.10696253214522],
+                {
+}
+            ).addTo(feature_group_8ab9ac0cd8f48585333750ca47be2807);
+        
+    
+            var icon_ffa40fec1d9663a1aa8b5c2371b2bcae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_39a72fd3239f8ebe3c386cb270a9ee31 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_25ee6f3ac7e45e1bf0411c7a36a97ef1 = $(`<div id="html_25ee6f3ac7e45e1bf0411c7a36a97ef1" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=35.993297421969736,-115.10696253214522' target='_blank'>Nov 2024</a></div>`)[0];
+                popup_39a72fd3239f8ebe3c386cb270a9ee31.setContent(html_25ee6f3ac7e45e1bf0411c7a36a97ef1);
+            
+        
+
+        marker_dbaf5e46e8f97fc6839dd8eeed45ecdc.bindPopup(popup_39a72fd3239f8ebe3c386cb270a9ee31)
+        ;
+
+        
+    
+    
+                marker_dbaf5e46e8f97fc6839dd8eeed45ecdc.setIcon(icon_ffa40fec1d9663a1aa8b5c2371b2bcae);
+            
+    
+            var marker_3c117b001299452a7a30c4972311da7e = L.marker(
+                [35.97375151399677, -115.0525977362753],
+                {
+}
+            ).addTo(feature_group_8ab9ac0cd8f48585333750ca47be2807);
+        
+    
+            var icon_f0600efae0ad0d011fef33e83a14f88f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ed86e1269585c127b7b7742cd1f43def = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b3055224e22d74ff5d14913420793f12 = $(`<div id="html_b3055224e22d74ff5d14913420793f12" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=35.97375151399677,-115.0525977362753' target='_blank'>Nov 2024</a></div>`)[0];
+                popup_ed86e1269585c127b7b7742cd1f43def.setContent(html_b3055224e22d74ff5d14913420793f12);
+            
+        
+
+        marker_3c117b001299452a7a30c4972311da7e.bindPopup(popup_ed86e1269585c127b7b7742cd1f43def)
+        ;
+
+        
+    
+    
+                marker_3c117b001299452a7a30c4972311da7e.setIcon(icon_f0600efae0ad0d011fef33e83a14f88f);
+            
+    
+            var marker_f369f09f9c00c1d6d52c88a24b08b5ed = L.marker(
+                [36.011869335932836, -115.13550004657456],
+                {
+}
+            ).addTo(feature_group_8ab9ac0cd8f48585333750ca47be2807);
+        
+    
+            var icon_b38621ae0b02f10af4d3e0a18f60ed09 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b0b93ff350023be5f47d4d2156e0fca1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e267554faae156c4e18e959386162ef4 = $(`<div id="html_e267554faae156c4e18e959386162ef4" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.011869335932836,-115.13550004657456' target='_blank'>Nov 2024</a></div>`)[0];
+                popup_b0b93ff350023be5f47d4d2156e0fca1.setContent(html_e267554faae156c4e18e959386162ef4);
+            
+        
+
+        marker_f369f09f9c00c1d6d52c88a24b08b5ed.bindPopup(popup_b0b93ff350023be5f47d4d2156e0fca1)
+        ;
+
+        
+    
+    
+                marker_f369f09f9c00c1d6d52c88a24b08b5ed.setIcon(icon_b38621ae0b02f10af4d3e0a18f60ed09);
+            
+    
+            var marker_6f191448ebdd35dc55243258bb691f28 = L.marker(
+                [36.06175990334673, -115.0940012224628],
+                {
+}
+            ).addTo(feature_group_8ab9ac0cd8f48585333750ca47be2807);
+        
+    
+            var icon_6ce5c3289458a363042cd935c820b709 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d7943ac8c4a2e0c00574a3c3e3af814a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_20518678c8fd4e755f8cf1874d87d2a3 = $(`<div id="html_20518678c8fd4e755f8cf1874d87d2a3" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.06175990334673,-115.0940012224628' target='_blank'>Sep 2024</a></div>`)[0];
+                popup_d7943ac8c4a2e0c00574a3c3e3af814a.setContent(html_20518678c8fd4e755f8cf1874d87d2a3);
+            
+        
+
+        marker_6f191448ebdd35dc55243258bb691f28.bindPopup(popup_d7943ac8c4a2e0c00574a3c3e3af814a)
+        ;
+
+        
+    
+    
+                marker_6f191448ebdd35dc55243258bb691f28.setIcon(icon_6ce5c3289458a363042cd935c820b709);
+            
+    
+            var marker_b47f604fe10e7f7835f413e739796bc7 = L.marker(
+                [36.063600965630314, -115.05058695232286],
+                {
+}
+            ).addTo(feature_group_8ab9ac0cd8f48585333750ca47be2807);
+        
+    
+            var icon_8541283a2053631c871c4bb4e5b26fb7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ba82f796c6a8845b5dc532078c60c5aa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2723cafdc3a862314fcf60a36bd23be1 = $(`<div id="html_2723cafdc3a862314fcf60a36bd23be1" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.063600965630314,-115.05058695232286' target='_blank'>Oct 2024</a></div>`)[0];
+                popup_ba82f796c6a8845b5dc532078c60c5aa.setContent(html_2723cafdc3a862314fcf60a36bd23be1);
+            
+        
+
+        marker_b47f604fe10e7f7835f413e739796bc7.bindPopup(popup_ba82f796c6a8845b5dc532078c60c5aa)
+        ;
+
+        
+    
+    
+                marker_b47f604fe10e7f7835f413e739796bc7.setIcon(icon_8541283a2053631c871c4bb4e5b26fb7);
+            
+    
+            var marker_9096a77650bef9baeff3d2a517c80f5f = L.marker(
+                [36.02737288797918, -115.13578409583715],
+                {
+}
+            ).addTo(feature_group_8ab9ac0cd8f48585333750ca47be2807);
+        
+    
+            var icon_807799eba8a885e37a35f81a13481b7e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_71eeffca569f66b22297e9c431bbc129 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2049e8f91d0c62afef9a8184d7aa60e6 = $(`<div id="html_2049e8f91d0c62afef9a8184d7aa60e6" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.02737288797918,-115.13578409583715' target='_blank'>Oct 2024</a></div>`)[0];
+                popup_71eeffca569f66b22297e9c431bbc129.setContent(html_2049e8f91d0c62afef9a8184d7aa60e6);
+            
+        
+
+        marker_9096a77650bef9baeff3d2a517c80f5f.bindPopup(popup_71eeffca569f66b22297e9c431bbc129)
+        ;
+
+        
+    
+    
+                marker_9096a77650bef9baeff3d2a517c80f5f.setIcon(icon_807799eba8a885e37a35f81a13481b7e);
+            
+    
+            var marker_6d06684c7ba7df56fe1536ed605b4e29 = L.marker(
+                [36.00645155336251, -115.1396957717706],
+                {
+}
+            ).addTo(feature_group_8ab9ac0cd8f48585333750ca47be2807);
+        
+    
+            var icon_bdd001ae83573e025a8ae0c34bb84115 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5d03420c167b90be398fda7873652872 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6d2fba6c800cee1653c6e49936b37ebe = $(`<div id="html_6d2fba6c800cee1653c6e49936b37ebe" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.00645155336251,-115.1396957717706' target='_blank'>Sep 2024</a></div>`)[0];
+                popup_5d03420c167b90be398fda7873652872.setContent(html_6d2fba6c800cee1653c6e49936b37ebe);
+            
+        
+
+        marker_6d06684c7ba7df56fe1536ed605b4e29.bindPopup(popup_5d03420c167b90be398fda7873652872)
+        ;
+
+        
+    
+    
+                marker_6d06684c7ba7df56fe1536ed605b4e29.setIcon(icon_bdd001ae83573e025a8ae0c34bb84115);
+            
+    
+            var marker_a3f7b4adbd7e4a4369366c6edb7ff515 = L.marker(
+                [35.98550588116475, -115.06289085885939],
+                {
+}
+            ).addTo(feature_group_8ab9ac0cd8f48585333750ca47be2807);
+        
+    
+            var icon_707d07acf5ac6bcb2f14fff579596cac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dc72eaa2d60ec1c70525c869210bdda8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8d2585dbe7c3795b4cf7172803f9a2ca = $(`<div id="html_8d2585dbe7c3795b4cf7172803f9a2ca" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=35.98550588116475,-115.06289085885939' target='_blank'>Nov 2024</a></div>`)[0];
+                popup_dc72eaa2d60ec1c70525c869210bdda8.setContent(html_8d2585dbe7c3795b4cf7172803f9a2ca);
+            
+        
+
+        marker_a3f7b4adbd7e4a4369366c6edb7ff515.bindPopup(popup_dc72eaa2d60ec1c70525c869210bdda8)
+        ;
+
+        
+    
+    
+                marker_a3f7b4adbd7e4a4369366c6edb7ff515.setIcon(icon_707d07acf5ac6bcb2f14fff579596cac);
+            
+    
+            var marker_94a1b85d387d23b6a090aa9cc45fa04d = L.marker(
+                [35.976229506494455, -115.12775182031235],
+                {
+}
+            ).addTo(feature_group_8ab9ac0cd8f48585333750ca47be2807);
+        
+    
+            var icon_5323c7ea14e67343c351bb49b1aea967 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f8c7886b4920383ed6520d6868475941 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4b149e0447b2b1649338c5ccc8f039d8 = $(`<div id="html_4b149e0447b2b1649338c5ccc8f039d8" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=35.976229506494455,-115.12775182031235' target='_blank'>Oct 2024</a></div>`)[0];
+                popup_f8c7886b4920383ed6520d6868475941.setContent(html_4b149e0447b2b1649338c5ccc8f039d8);
+            
+        
+
+        marker_94a1b85d387d23b6a090aa9cc45fa04d.bindPopup(popup_f8c7886b4920383ed6520d6868475941)
+        ;
+
+        
+    
+    
+                marker_94a1b85d387d23b6a090aa9cc45fa04d.setIcon(icon_5323c7ea14e67343c351bb49b1aea967);
+            
+    
+            var marker_ee169ff4b33cd216d6d3769b6c5052ea = L.marker(
+                [36.05591561997252, -115.11037975209055],
+                {
+}
+            ).addTo(feature_group_8ab9ac0cd8f48585333750ca47be2807);
+        
+    
+            var icon_8a1a8b3cf93b3433e1f7e641023291b4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_91445b1db516477ad9df8000090e7db5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1fe07a66ee550b69ddccb8bea06eba76 = $(`<div id="html_1fe07a66ee550b69ddccb8bea06eba76" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.05591561997252,-115.11037975209055' target='_blank'>Nov 2024</a></div>`)[0];
+                popup_91445b1db516477ad9df8000090e7db5.setContent(html_1fe07a66ee550b69ddccb8bea06eba76);
+            
+        
+
+        marker_ee169ff4b33cd216d6d3769b6c5052ea.bindPopup(popup_91445b1db516477ad9df8000090e7db5)
+        ;
+
+        
+    
+    
+                marker_ee169ff4b33cd216d6d3769b6c5052ea.setIcon(icon_8a1a8b3cf93b3433e1f7e641023291b4);
+            
+    
+            var marker_055e4c94de7c55781bf85386e00854b0 = L.marker(
+                [36.05569634282039, -115.06482843990725],
+                {
+}
+            ).addTo(feature_group_8ab9ac0cd8f48585333750ca47be2807);
+        
+    
+            var icon_1e041eeb492adc0936d3d1802f19d2f7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_47c5c21a4066315db251cd7f280905b6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3b6e67efb9088782bf96e2197f69b78c = $(`<div id="html_3b6e67efb9088782bf96e2197f69b78c" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.05569634282039,-115.06482843990725' target='_blank'>Nov 2024</a></div>`)[0];
+                popup_47c5c21a4066315db251cd7f280905b6.setContent(html_3b6e67efb9088782bf96e2197f69b78c);
+            
+        
+
+        marker_055e4c94de7c55781bf85386e00854b0.bindPopup(popup_47c5c21a4066315db251cd7f280905b6)
+        ;
+
+        
+    
+    
+                marker_055e4c94de7c55781bf85386e00854b0.setIcon(icon_1e041eeb492adc0936d3d1802f19d2f7);
+            
+    
+            var marker_e0de5e1c04adb3f2fa5637b0f88410d7 = L.marker(
+                [36.02394206974294, -115.12046630407131],
+                {
+}
+            ).addTo(feature_group_8ab9ac0cd8f48585333750ca47be2807);
+        
+    
+            var icon_66da5d3f3e9e9b5b4cfb0c347cd924a5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ff5f29887405599052bb7d25bc97b2ec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8afea12fd657c47569da7f76c4c434ba = $(`<div id="html_8afea12fd657c47569da7f76c4c434ba" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.02394206974294,-115.12046630407131' target='_blank'>Nov 2024</a></div>`)[0];
+                popup_ff5f29887405599052bb7d25bc97b2ec.setContent(html_8afea12fd657c47569da7f76c4c434ba);
+            
+        
+
+        marker_e0de5e1c04adb3f2fa5637b0f88410d7.bindPopup(popup_ff5f29887405599052bb7d25bc97b2ec)
+        ;
+
+        
+    
+    
+                marker_e0de5e1c04adb3f2fa5637b0f88410d7.setIcon(icon_66da5d3f3e9e9b5b4cfb0c347cd924a5);
+            
+    
+            var marker_6f0e233980acc465239df4e4ae6a4bea = L.marker(
+                [35.994278611121636, -115.12060385674313],
+                {
+}
+            ).addTo(feature_group_8ab9ac0cd8f48585333750ca47be2807);
+        
+    
+            var icon_f27d8a9968b04fb830bbf957bd27731e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e71c98613e8f5d468afb4ddf302e932c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2e2019a5748ee902eafa9dcefe276b1b = $(`<div id="html_2e2019a5748ee902eafa9dcefe276b1b" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=35.994278611121636,-115.12060385674313' target='_blank'>Nov 2024</a></div>`)[0];
+                popup_e71c98613e8f5d468afb4ddf302e932c.setContent(html_2e2019a5748ee902eafa9dcefe276b1b);
+            
+        
+
+        marker_6f0e233980acc465239df4e4ae6a4bea.bindPopup(popup_e71c98613e8f5d468afb4ddf302e932c)
+        ;
+
+        
+    
+    
+                marker_6f0e233980acc465239df4e4ae6a4bea.setIcon(icon_f27d8a9968b04fb830bbf957bd27731e);
+            
+    
+            var marker_fa057211f589f7bac455bf8b9649b987 = L.marker(
+                [36.04913234120519, -115.05210412406782],
+                {
+}
+            ).addTo(feature_group_8ab9ac0cd8f48585333750ca47be2807);
+        
+    
+            var icon_1e1b2e865d4761d40655a03f777f39af = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1608075018aa57ade18a03b198a28cbf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7f94817ebf73c3c16208585d63c0560b = $(`<div id="html_7f94817ebf73c3c16208585d63c0560b" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.04913234120519,-115.05210412406782' target='_blank'>Nov 2024</a></div>`)[0];
+                popup_1608075018aa57ade18a03b198a28cbf.setContent(html_7f94817ebf73c3c16208585d63c0560b);
+            
+        
+
+        marker_fa057211f589f7bac455bf8b9649b987.bindPopup(popup_1608075018aa57ade18a03b198a28cbf)
+        ;
+
+        
+    
+    
+                marker_fa057211f589f7bac455bf8b9649b987.setIcon(icon_1e1b2e865d4761d40655a03f777f39af);
+            
+    
+            var marker_ad9d961edbdb5fca933edf28235394a0 = L.marker(
+                [35.98007147686605, -115.11823375979212],
+                {
+}
+            ).addTo(feature_group_8ab9ac0cd8f48585333750ca47be2807);
+        
+    
+            var icon_ac95b3d8dca8017f4ee46ff7bb9d2a67 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1bf29459b82ca3e4c513194e7e3257ca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5060264e970c850ffcee33bc499f58a8 = $(`<div id="html_5060264e970c850ffcee33bc499f58a8" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=35.98007147686605,-115.11823375979212' target='_blank'>Sep 2024</a></div>`)[0];
+                popup_1bf29459b82ca3e4c513194e7e3257ca.setContent(html_5060264e970c850ffcee33bc499f58a8);
+            
+        
+
+        marker_ad9d961edbdb5fca933edf28235394a0.bindPopup(popup_1bf29459b82ca3e4c513194e7e3257ca)
+        ;
+
+        
+    
+    
+                marker_ad9d961edbdb5fca933edf28235394a0.setIcon(icon_ac95b3d8dca8017f4ee46ff7bb9d2a67);
+            
+    
+            var marker_532318b5760a69785322ae7b5acfecc7 = L.marker(
+                [36.0663314028077, -115.08766498617591],
+                {
+}
+            ).addTo(feature_group_8ab9ac0cd8f48585333750ca47be2807);
+        
+    
+            var icon_3782801c178b923f19d7f9fc97a7ee60 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ad5d27b91eed3ea760016da63d22ca3f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_171fcc545ab3a542aac51e32fdbd7186 = $(`<div id="html_171fcc545ab3a542aac51e32fdbd7186" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.0663314028077,-115.08766498617591' target='_blank'>Sep 2024</a></div>`)[0];
+                popup_ad5d27b91eed3ea760016da63d22ca3f.setContent(html_171fcc545ab3a542aac51e32fdbd7186);
+            
+        
+
+        marker_532318b5760a69785322ae7b5acfecc7.bindPopup(popup_ad5d27b91eed3ea760016da63d22ca3f)
+        ;
+
+        
+    
+    
+                marker_532318b5760a69785322ae7b5acfecc7.setIcon(icon_3782801c178b923f19d7f9fc97a7ee60);
+            
+    
+            var marker_b0c83cff1b2c1f7549ac01097ab1b9c4 = L.marker(
+                [36.047704956910906, -115.06280973564007],
+                {
+}
+            ).addTo(feature_group_8ab9ac0cd8f48585333750ca47be2807);
+        
+    
+            var icon_f0538e616d725e2d75306e6cd1e739f6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5753bbf3c5c663f393fa5788d015f04c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b26e0316ee16c947c7d91a9de6ecdddb = $(`<div id="html_b26e0316ee16c947c7d91a9de6ecdddb" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.047704956910906,-115.06280973564007' target='_blank'>Nov 2024</a></div>`)[0];
+                popup_5753bbf3c5c663f393fa5788d015f04c.setContent(html_b26e0316ee16c947c7d91a9de6ecdddb);
+            
+        
+
+        marker_b0c83cff1b2c1f7549ac01097ab1b9c4.bindPopup(popup_5753bbf3c5c663f393fa5788d015f04c)
+        ;
+
+        
+    
+    
+                marker_b0c83cff1b2c1f7549ac01097ab1b9c4.setIcon(icon_f0538e616d725e2d75306e6cd1e739f6);
+            
+    
+            var marker_e9ff3578e34495831fc5988c187c3a7c = L.marker(
+                [36.06185833327074, -115.05683485452562],
+                {
+}
+            ).addTo(feature_group_8ab9ac0cd8f48585333750ca47be2807);
+        
+    
+            var icon_c0ccd55d3b1b9af54cb029e90efa4c95 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f6cecf88df93a2173342f4385577e03 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_99fcec97f18ba4f73c95448261404070 = $(`<div id="html_99fcec97f18ba4f73c95448261404070" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.06185833327074,-115.05683485452562' target='_blank'>Nov 2024</a></div>`)[0];
+                popup_3f6cecf88df93a2173342f4385577e03.setContent(html_99fcec97f18ba4f73c95448261404070);
+            
+        
+
+        marker_e9ff3578e34495831fc5988c187c3a7c.bindPopup(popup_3f6cecf88df93a2173342f4385577e03)
+        ;
+
+        
+    
+    
+                marker_e9ff3578e34495831fc5988c187c3a7c.setIcon(icon_c0ccd55d3b1b9af54cb029e90efa4c95);
+            
+    
+            var marker_48182eed36218b3a9e1b3d738399c101 = L.marker(
+                [35.981062118428916, -115.12910321133808],
+                {
+}
+            ).addTo(feature_group_8ab9ac0cd8f48585333750ca47be2807);
+        
+    
+            var icon_6036c562705b49953bb7c7a770395f7a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_45ba2c9341bfd18aef74ec56057e9b5a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a7144e5ff8aa32a92e4271f975cf8e25 = $(`<div id="html_a7144e5ff8aa32a92e4271f975cf8e25" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=35.981062118428916,-115.12910321133808' target='_blank'>Oct 2024</a></div>`)[0];
+                popup_45ba2c9341bfd18aef74ec56057e9b5a.setContent(html_a7144e5ff8aa32a92e4271f975cf8e25);
+            
+        
+
+        marker_48182eed36218b3a9e1b3d738399c101.bindPopup(popup_45ba2c9341bfd18aef74ec56057e9b5a)
+        ;
+
+        
+    
+    
+                marker_48182eed36218b3a9e1b3d738399c101.setIcon(icon_6036c562705b49953bb7c7a770395f7a);
+            
+    
+            var marker_ccc6de261c34322117159e57a74e63d8 = L.marker(
+                [35.980035051247754, -115.05790604601275],
+                {
+}
+            ).addTo(feature_group_8ab9ac0cd8f48585333750ca47be2807);
+        
+    
+            var icon_7786317b413e86870a630ecd633f22da = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_99bbfe011a2241ff3d603172038b564c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_12f16f5bf15e1dd53800766735260f75 = $(`<div id="html_12f16f5bf15e1dd53800766735260f75" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=35.980035051247754,-115.05790604601275' target='_blank'>Sep 2024</a></div>`)[0];
+                popup_99bbfe011a2241ff3d603172038b564c.setContent(html_12f16f5bf15e1dd53800766735260f75);
+            
+        
+
+        marker_ccc6de261c34322117159e57a74e63d8.bindPopup(popup_99bbfe011a2241ff3d603172038b564c)
+        ;
+
+        
+    
+    
+                marker_ccc6de261c34322117159e57a74e63d8.setIcon(icon_7786317b413e86870a630ecd633f22da);
+            
+    
+            var marker_dab952aa592b893ab92ae45f40020033 = L.marker(
+                [36.043919742704155, -115.12228099197048],
+                {
+}
+            ).addTo(feature_group_8ab9ac0cd8f48585333750ca47be2807);
+        
+    
+            var icon_963b8fa3b46a99e7fd9e249dacc29bf1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_164c6c6fb87b8bb957fa09452879f0f5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f0e78db10319b57163b0f3ba65fc7ea7 = $(`<div id="html_f0e78db10319b57163b0f3ba65fc7ea7" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.043919742704155,-115.12228099197048' target='_blank'>Nov 2024</a></div>`)[0];
+                popup_164c6c6fb87b8bb957fa09452879f0f5.setContent(html_f0e78db10319b57163b0f3ba65fc7ea7);
+            
+        
+
+        marker_dab952aa592b893ab92ae45f40020033.bindPopup(popup_164c6c6fb87b8bb957fa09452879f0f5)
+        ;
+
+        
+    
+    
+                marker_dab952aa592b893ab92ae45f40020033.setIcon(icon_963b8fa3b46a99e7fd9e249dacc29bf1);
+            
+    
+            var marker_5af4d3cf42ba05e530b05b9d8877ef0c = L.marker(
+                [36.048957581766935, -115.12169224301071],
+                {
+}
+            ).addTo(feature_group_8ab9ac0cd8f48585333750ca47be2807);
+        
+    
+            var icon_2c5c3f9a7c11df36e8796147c4410769 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_af438bcf7695a57e218496f978189481 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cb9984365823508c1604df258cb53001 = $(`<div id="html_cb9984365823508c1604df258cb53001" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.048957581766935,-115.12169224301071' target='_blank'>Nov 2024</a></div>`)[0];
+                popup_af438bcf7695a57e218496f978189481.setContent(html_cb9984365823508c1604df258cb53001);
+            
+        
+
+        marker_5af4d3cf42ba05e530b05b9d8877ef0c.bindPopup(popup_af438bcf7695a57e218496f978189481)
+        ;
+
+        
+    
+    
+                marker_5af4d3cf42ba05e530b05b9d8877ef0c.setIcon(icon_2c5c3f9a7c11df36e8796147c4410769);
+            
+    
+            var marker_eb3937cfdda625e3b0f77c9a1363b398 = L.marker(
+                [35.98331790349599, -115.0569864237304],
+                {
+}
+            ).addTo(feature_group_8ab9ac0cd8f48585333750ca47be2807);
+        
+    
+            var icon_a652076294cf857618bc0e1b3597e0a1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6b18224148cdd46cc08f6736b9b62199 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a9d6c16b34abeae583207bd8dbe0bc9e = $(`<div id="html_a9d6c16b34abeae583207bd8dbe0bc9e" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=35.98331790349599,-115.0569864237304' target='_blank'>Oct 2024</a></div>`)[0];
+                popup_6b18224148cdd46cc08f6736b9b62199.setContent(html_a9d6c16b34abeae583207bd8dbe0bc9e);
+            
+        
+
+        marker_eb3937cfdda625e3b0f77c9a1363b398.bindPopup(popup_6b18224148cdd46cc08f6736b9b62199)
+        ;
+
+        
+    
+    
+                marker_eb3937cfdda625e3b0f77c9a1363b398.setIcon(icon_a652076294cf857618bc0e1b3597e0a1);
+            
+    
+            feature_group_8ab9ac0cd8f48585333750ca47be2807.addTo(map_ba293039fb77f11786cd1fd42c0f0c39);
+        
+    
+            var feature_group_71bfd42e4c1281aafdbdde1285290678 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_567f9b744c7ca412f1c36377ae116509 = L.marker(
+                [36.05441334690391, -115.10407733161912],
+                {
+}
+            ).addTo(feature_group_71bfd42e4c1281aafdbdde1285290678);
+        
+    
+            var icon_d4866d848a7a5ca77456797bfcd7b058 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4d2cd1d6fd2397de9b4b83e8a713ee25 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_94ad2dd4c17297469a6263f239ae2d86 = $(`<div id="html_94ad2dd4c17297469a6263f239ae2d86" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.05441334690391,-115.10407733161912' target='_blank'>Jan 2023</a></div>`)[0];
+                popup_4d2cd1d6fd2397de9b4b83e8a713ee25.setContent(html_94ad2dd4c17297469a6263f239ae2d86);
+            
+        
+
+        marker_567f9b744c7ca412f1c36377ae116509.bindPopup(popup_4d2cd1d6fd2397de9b4b83e8a713ee25)
+        ;
+
+        
+    
+    
+                marker_567f9b744c7ca412f1c36377ae116509.setIcon(icon_d4866d848a7a5ca77456797bfcd7b058);
+            
+    
+            var marker_651208af8fffe3162cbf3c3ac3f8bb8f = L.marker(
+                [36.02672436811475, -115.10972465355982],
+                {
+}
+            ).addTo(feature_group_71bfd42e4c1281aafdbdde1285290678);
+        
+    
+            var icon_5e0cc9c47acbe48773f1b8de8f2ee010 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ccf84f3e3deab44486b85f2ee77bd82 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ca95c89b873edc285cdfd7e22948f655 = $(`<div id="html_ca95c89b873edc285cdfd7e22948f655" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.02672436811475,-115.10972465355982' target='_blank'>Jan 2023</a></div>`)[0];
+                popup_0ccf84f3e3deab44486b85f2ee77bd82.setContent(html_ca95c89b873edc285cdfd7e22948f655);
+            
+        
+
+        marker_651208af8fffe3162cbf3c3ac3f8bb8f.bindPopup(popup_0ccf84f3e3deab44486b85f2ee77bd82)
+        ;
+
+        
+    
+    
+                marker_651208af8fffe3162cbf3c3ac3f8bb8f.setIcon(icon_5e0cc9c47acbe48773f1b8de8f2ee010);
+            
+    
+            var marker_f599800b4cb9bf9dd0a9a80e24a83d21 = L.marker(
+                [36.06979843777371, -115.07569667686623],
+                {
+}
+            ).addTo(feature_group_71bfd42e4c1281aafdbdde1285290678);
+        
+    
+            var icon_ffa8096bd28646ff30e875e085c1f812 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f2fa5e783f6dc51c569ed4d98f6daeb5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c60feb56afaa092e861c3f977b9e8fec = $(`<div id="html_c60feb56afaa092e861c3f977b9e8fec" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.06979843777371,-115.07569667686623' target='_blank'>Jan 2023</a></div>`)[0];
+                popup_f2fa5e783f6dc51c569ed4d98f6daeb5.setContent(html_c60feb56afaa092e861c3f977b9e8fec);
+            
+        
+
+        marker_f599800b4cb9bf9dd0a9a80e24a83d21.bindPopup(popup_f2fa5e783f6dc51c569ed4d98f6daeb5)
+        ;
+
+        
+    
+    
+                marker_f599800b4cb9bf9dd0a9a80e24a83d21.setIcon(icon_ffa8096bd28646ff30e875e085c1f812);
+            
+    
+            var marker_827500fc5cdb0c070bc7b6e1f93bc035 = L.marker(
+                [36.04387394634188, -115.1111544128421],
+                {
+}
+            ).addTo(feature_group_71bfd42e4c1281aafdbdde1285290678);
+        
+    
+            var icon_a8ed804f9bf3ffeabe8b6c1caaa48700 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7bf3c994d3a81573c5dd3ffdbb2942cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_680788d5e42d01b19b8c411b4533cf9e = $(`<div id="html_680788d5e42d01b19b8c411b4533cf9e" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.04387394634188,-115.1111544128421' target='_blank'>Jan 2023</a></div>`)[0];
+                popup_7bf3c994d3a81573c5dd3ffdbb2942cf.setContent(html_680788d5e42d01b19b8c411b4533cf9e);
+            
+        
+
+        marker_827500fc5cdb0c070bc7b6e1f93bc035.bindPopup(popup_7bf3c994d3a81573c5dd3ffdbb2942cf)
+        ;
+
+        
+    
+    
+                marker_827500fc5cdb0c070bc7b6e1f93bc035.setIcon(icon_a8ed804f9bf3ffeabe8b6c1caaa48700);
+            
+    
+            var marker_a3046a54723f160481cb155d678de7a1 = L.marker(
+                [36.04935334987762, -115.09203848903931],
+                {
+}
+            ).addTo(feature_group_71bfd42e4c1281aafdbdde1285290678);
+        
+    
+            var icon_c6719f4ac1e4356832eb2744c9b551a5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2080e1c783acae31299b87731afa1853 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_197552ea74962a160f051096fb375089 = $(`<div id="html_197552ea74962a160f051096fb375089" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.04935334987762,-115.09203848903931' target='_blank'>Jan 2023</a></div>`)[0];
+                popup_2080e1c783acae31299b87731afa1853.setContent(html_197552ea74962a160f051096fb375089);
+            
+        
+
+        marker_a3046a54723f160481cb155d678de7a1.bindPopup(popup_2080e1c783acae31299b87731afa1853)
+        ;
+
+        
+    
+    
+                marker_a3046a54723f160481cb155d678de7a1.setIcon(icon_c6719f4ac1e4356832eb2744c9b551a5);
+            
+    
+            var marker_0892386fec28e06c583d5e50a9ed40da = L.marker(
+                [36.025205362945094, -115.07623970785725],
+                {
+}
+            ).addTo(feature_group_71bfd42e4c1281aafdbdde1285290678);
+        
+    
+            var icon_91deab34c23060e4df72fe100f90689e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3092853b4d3689873cce6ab96713b331 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a72e8b2380111a8fd111f3b90f4f94bf = $(`<div id="html_a72e8b2380111a8fd111f3b90f4f94bf" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.025205362945094,-115.07623970785725' target='_blank'>Jan 2023</a></div>`)[0];
+                popup_3092853b4d3689873cce6ab96713b331.setContent(html_a72e8b2380111a8fd111f3b90f4f94bf);
+            
+        
+
+        marker_0892386fec28e06c583d5e50a9ed40da.bindPopup(popup_3092853b4d3689873cce6ab96713b331)
+        ;
+
+        
+    
+    
+                marker_0892386fec28e06c583d5e50a9ed40da.setIcon(icon_91deab34c23060e4df72fe100f90689e);
+            
+    
+            var marker_b7e3ab466289cec2c084f3f16ac1537a = L.marker(
+                [36.052267772725926, -115.13315669241223],
+                {
+}
+            ).addTo(feature_group_71bfd42e4c1281aafdbdde1285290678);
+        
+    
+            var icon_ebb6e8334d8d0a49ccac349bcee70600 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9358a182a035b76362a2255df4c0900f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cbf54d282a4ee201c52c5fa0597f689b = $(`<div id="html_cbf54d282a4ee201c52c5fa0597f689b" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.052267772725926,-115.13315669241223' target='_blank'>Jan 2023</a></div>`)[0];
+                popup_9358a182a035b76362a2255df4c0900f.setContent(html_cbf54d282a4ee201c52c5fa0597f689b);
+            
+        
+
+        marker_b7e3ab466289cec2c084f3f16ac1537a.bindPopup(popup_9358a182a035b76362a2255df4c0900f)
+        ;
+
+        
+    
+    
+                marker_b7e3ab466289cec2c084f3f16ac1537a.setIcon(icon_ebb6e8334d8d0a49ccac349bcee70600);
+            
+    
+            var marker_b012d37b22e426168d1a177de38a2844 = L.marker(
+                [36.05252165192019, -115.06470795262035],
+                {
+}
+            ).addTo(feature_group_71bfd42e4c1281aafdbdde1285290678);
+        
+    
+            var icon_fd5262488930b6407e5d410329e87443 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_676ab76b3d468c07bc19b712c6597279 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a475d4e1bcd3de0ccf1363b1148e2d7 = $(`<div id="html_6a475d4e1bcd3de0ccf1363b1148e2d7" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.05252165192019,-115.06470795262035' target='_blank'>Jan 2023</a></div>`)[0];
+                popup_676ab76b3d468c07bc19b712c6597279.setContent(html_6a475d4e1bcd3de0ccf1363b1148e2d7);
+            
+        
+
+        marker_b012d37b22e426168d1a177de38a2844.bindPopup(popup_676ab76b3d468c07bc19b712c6597279)
+        ;
+
+        
+    
+    
+                marker_b012d37b22e426168d1a177de38a2844.setIcon(icon_fd5262488930b6407e5d410329e87443);
+            
+    
+            var marker_508ef7a180cb28a50d51a70adf97cad9 = L.marker(
+                [36.016010964079456, -115.113409387188],
+                {
+}
+            ).addTo(feature_group_71bfd42e4c1281aafdbdde1285290678);
+        
+    
+            var icon_c6390793c98d81b1802638f60cdd241c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e63b627e0d0762d2a46dddc3b661fd5b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6d28ca6d9a45e0b4cc3913f7bceaeff1 = $(`<div id="html_6d28ca6d9a45e0b4cc3913f7bceaeff1" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.016010964079456,-115.113409387188' target='_blank'>Jan 2023</a></div>`)[0];
+                popup_e63b627e0d0762d2a46dddc3b661fd5b.setContent(html_6d28ca6d9a45e0b4cc3913f7bceaeff1);
+            
+        
+
+        marker_508ef7a180cb28a50d51a70adf97cad9.bindPopup(popup_e63b627e0d0762d2a46dddc3b661fd5b)
+        ;
+
+        
+    
+    
+                marker_508ef7a180cb28a50d51a70adf97cad9.setIcon(icon_c6390793c98d81b1802638f60cdd241c);
+            
+    
+            var marker_350854cfd30227d6b326462f9bc1b066 = L.marker(
+                [36.00039881671731, -115.09959420802917],
+                {
+}
+            ).addTo(feature_group_71bfd42e4c1281aafdbdde1285290678);
+        
+    
+            var icon_8a9b254bd8e3090d3fb99e9d420b4bff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fef9975624aaa92e703e36c9fe1655c2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1dbd6d9c4704afd6cf2f2f656b410096 = $(`<div id="html_1dbd6d9c4704afd6cf2f2f656b410096" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.00039881671731,-115.09959420802917' target='_blank'>Jan 2023</a></div>`)[0];
+                popup_fef9975624aaa92e703e36c9fe1655c2.setContent(html_1dbd6d9c4704afd6cf2f2f656b410096);
+            
+        
+
+        marker_350854cfd30227d6b326462f9bc1b066.bindPopup(popup_fef9975624aaa92e703e36c9fe1655c2)
+        ;
+
+        
+    
+    
+                marker_350854cfd30227d6b326462f9bc1b066.setIcon(icon_8a9b254bd8e3090d3fb99e9d420b4bff);
+            
+    
+            var marker_bf9ed97c2a8fde0d15fb926c92b392a7 = L.marker(
+                [36.06933064936613, -115.073865825124],
+                {
+}
+            ).addTo(feature_group_71bfd42e4c1281aafdbdde1285290678);
+        
+    
+            var icon_6269acfa6994ef3b3e9917e66d666a11 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ae165bdf2c113335df39e1d64a7b0078 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c218dcf91ce877fa5b8f49df7278fab7 = $(`<div id="html_c218dcf91ce877fa5b8f49df7278fab7" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.06933064936613,-115.073865825124' target='_blank'>Jan 2023</a></div>`)[0];
+                popup_ae165bdf2c113335df39e1d64a7b0078.setContent(html_c218dcf91ce877fa5b8f49df7278fab7);
+            
+        
+
+        marker_bf9ed97c2a8fde0d15fb926c92b392a7.bindPopup(popup_ae165bdf2c113335df39e1d64a7b0078)
+        ;
+
+        
+    
+    
+                marker_bf9ed97c2a8fde0d15fb926c92b392a7.setIcon(icon_6269acfa6994ef3b3e9917e66d666a11);
+            
+    
+            var marker_f98c5a48befd94a326c7ebbd7bc1ca9e = L.marker(
+                [36.003528874127134, -115.13877603965574],
+                {
+}
+            ).addTo(feature_group_71bfd42e4c1281aafdbdde1285290678);
+        
+    
+            var icon_d4ed6d6422300ba318303e6a4e438a26 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1ede45b35dd86e16dcb70d03b23c6c3a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2bc7a1f992069fbfdcb3753ff8538fae = $(`<div id="html_2bc7a1f992069fbfdcb3753ff8538fae" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.003528874127134,-115.13877603965574' target='_blank'>Jan 2023</a></div>`)[0];
+                popup_1ede45b35dd86e16dcb70d03b23c6c3a.setContent(html_2bc7a1f992069fbfdcb3753ff8538fae);
+            
+        
+
+        marker_f98c5a48befd94a326c7ebbd7bc1ca9e.bindPopup(popup_1ede45b35dd86e16dcb70d03b23c6c3a)
+        ;
+
+        
+    
+    
+                marker_f98c5a48befd94a326c7ebbd7bc1ca9e.setIcon(icon_d4ed6d6422300ba318303e6a4e438a26);
+            
+    
+            var marker_ba2e950759305e410e9ded7de550a8e8 = L.marker(
+                [36.02001649786298, -115.12176006345919],
+                {
+}
+            ).addTo(feature_group_71bfd42e4c1281aafdbdde1285290678);
+        
+    
+            var icon_9b549e87a2a58c69e2d6c8c9ecb4ee7c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_00a028b662324ba8ceaf0897d5310716 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d642e6b88482277660b0889aefdc58c0 = $(`<div id="html_d642e6b88482277660b0889aefdc58c0" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.02001649786298,-115.12176006345919' target='_blank'>Jan 2023</a></div>`)[0];
+                popup_00a028b662324ba8ceaf0897d5310716.setContent(html_d642e6b88482277660b0889aefdc58c0);
+            
+        
+
+        marker_ba2e950759305e410e9ded7de550a8e8.bindPopup(popup_00a028b662324ba8ceaf0897d5310716)
+        ;
+
+        
+    
+    
+                marker_ba2e950759305e410e9ded7de550a8e8.setIcon(icon_9b549e87a2a58c69e2d6c8c9ecb4ee7c);
+            
+    
+            feature_group_71bfd42e4c1281aafdbdde1285290678.addTo(map_ba293039fb77f11786cd1fd42c0f0c39);
+        
+    
+            var feature_group_3171bfac014757d5f09f0eda35c38494 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_a220094a7cc5f7e1c32dd16e20fdf3b3 = L.marker(
+                [36.03469895434686, -115.10591824073735],
+                {
+}
+            ).addTo(feature_group_3171bfac014757d5f09f0eda35c38494);
+        
+    
+            var icon_2835987220aaf48272c41b9878de5f54 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_62f764d27d191c6ca5a24c98bf0353d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d7f36aca8f261c4eae3d82713e2e38fe = $(`<div id="html_d7f36aca8f261c4eae3d82713e2e38fe" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.03469895434686,-115.10591824073735' target='_blank'>Feb 2025</a></div>`)[0];
+                popup_62f764d27d191c6ca5a24c98bf0353d3.setContent(html_d7f36aca8f261c4eae3d82713e2e38fe);
+            
+        
+
+        marker_a220094a7cc5f7e1c32dd16e20fdf3b3.bindPopup(popup_62f764d27d191c6ca5a24c98bf0353d3)
+        ;
+
+        
+    
+    
+                marker_a220094a7cc5f7e1c32dd16e20fdf3b3.setIcon(icon_2835987220aaf48272c41b9878de5f54);
+            
+    
+            var marker_01ec41b4239ae621352a1895cd7d23df = L.marker(
+                [35.99980472993462, -115.1247016524716],
+                {
+}
+            ).addTo(feature_group_3171bfac014757d5f09f0eda35c38494);
+        
+    
+            var icon_dbea08cec66134b6bf94c71088e7f8f4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_96ad4ab237a05237da0374132f4e1a41 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_513206e31dbc469c61be8600bfaaed84 = $(`<div id="html_513206e31dbc469c61be8600bfaaed84" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=35.99980472993462,-115.1247016524716' target='_blank'>Jan 2025</a></div>`)[0];
+                popup_96ad4ab237a05237da0374132f4e1a41.setContent(html_513206e31dbc469c61be8600bfaaed84);
+            
+        
+
+        marker_01ec41b4239ae621352a1895cd7d23df.bindPopup(popup_96ad4ab237a05237da0374132f4e1a41)
+        ;
+
+        
+    
+    
+                marker_01ec41b4239ae621352a1895cd7d23df.setIcon(icon_dbea08cec66134b6bf94c71088e7f8f4);
+            
+    
+            var marker_7bc7a890b503a512cbb4b7e217d20b88 = L.marker(
+                [35.989654338618564, -115.07598600044422],
+                {
+}
+            ).addTo(feature_group_3171bfac014757d5f09f0eda35c38494);
+        
+    
+            var icon_49e0de2a69df7155e2bf23de1a8ea765 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_73a70ce9ef88146eeb56649da0e5447f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f9d66df9ff80d9d9dc5c0dd024470633 = $(`<div id="html_f9d66df9ff80d9d9dc5c0dd024470633" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=35.989654338618564,-115.07598600044422' target='_blank'>Mar 2025</a></div>`)[0];
+                popup_73a70ce9ef88146eeb56649da0e5447f.setContent(html_f9d66df9ff80d9d9dc5c0dd024470633);
+            
+        
+
+        marker_7bc7a890b503a512cbb4b7e217d20b88.bindPopup(popup_73a70ce9ef88146eeb56649da0e5447f)
+        ;
+
+        
+    
+    
+                marker_7bc7a890b503a512cbb4b7e217d20b88.setIcon(icon_49e0de2a69df7155e2bf23de1a8ea765);
+            
+    
+            var marker_ac68a344baf8f7e82a5a0d5959289394 = L.marker(
+                [36.02131207061604, -115.04240342951923],
+                {
+}
+            ).addTo(feature_group_3171bfac014757d5f09f0eda35c38494);
+        
+    
+            var icon_b0859468e7b6bb995956e9c3061b2b57 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_22992ec051042fba69647cca2b6779d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_75eea953bd046d4b831d5623c0cb41a5 = $(`<div id="html_75eea953bd046d4b831d5623c0cb41a5" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.02131207061604,-115.04240342951923' target='_blank'>Jan 2025</a></div>`)[0];
+                popup_22992ec051042fba69647cca2b6779d0.setContent(html_75eea953bd046d4b831d5623c0cb41a5);
+            
+        
+
+        marker_ac68a344baf8f7e82a5a0d5959289394.bindPopup(popup_22992ec051042fba69647cca2b6779d0)
+        ;
+
+        
+    
+    
+                marker_ac68a344baf8f7e82a5a0d5959289394.setIcon(icon_b0859468e7b6bb995956e9c3061b2b57);
+            
+    
+            var marker_d08543a75c98002307249f855a51fe9a = L.marker(
+                [35.98582078536905, -115.05331762795629],
+                {
+}
+            ).addTo(feature_group_3171bfac014757d5f09f0eda35c38494);
+        
+    
+            var icon_b4f245f5d1b0f6ddf019f4c6d8a84ebf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e1a19589f03fc866d97d0c4204bad9d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7e7856445d5e11b321296c6877b2af2b = $(`<div id="html_7e7856445d5e11b321296c6877b2af2b" style="width: 100.0%; height: 100.0%;"><a href='https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=35.98582078536905,-115.05331762795629' target='_blank'>Jan 2025</a></div>`)[0];
+                popup_e1a19589f03fc866d97d0c4204bad9d7.setContent(html_7e7856445d5e11b321296c6877b2af2b);
+            
+        
+
+        marker_d08543a75c98002307249f855a51fe9a.bindPopup(popup_e1a19589f03fc866d97d0c4204bad9d7)
+        ;
+
+        
+    
+    
+                marker_d08543a75c98002307249f855a51fe9a.setIcon(icon_b4f245f5d1b0f6ddf019f4c6d8a84ebf);
+            
+    
+            feature_group_3171bfac014757d5f09f0eda35c38494.addTo(map_ba293039fb77f11786cd1fd42c0f0c39);
+        
+    
+            var layer_control_ad37f7e83aa3467a598016619c019a09_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_9c925f6a9ba0de2ee1d12e2b1ed805c5,
+                },
+                overlays :  {
+                    "2021" : feature_group_e6606dcf83602f14e4c166466834c558,
+                    "2022" : feature_group_eacf030be5eb5ce156d5fce79c8db4a7,
+                    "2024" : feature_group_8ab9ac0cd8f48585333750ca47be2807,
+                    "2023" : feature_group_71bfd42e4c1281aafdbdde1285290678,
+                    "2025" : feature_group_3171bfac014757d5f09f0eda35c38494,
+                },
+            };
+            let layer_control_ad37f7e83aa3467a598016619c019a09 = L.control.layers(
+                layer_control_ad37f7e83aa3467a598016619c019a09_layers.base_layers,
+                layer_control_ad37f7e83aa3467a598016619c019a09_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_ba293039fb77f11786cd1fd42c0f0c39);
+
+        
+</script>
+</html>
