@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fce1049dedb654b3e72329565591f53e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fce1049dedb654b3e72329565591f53e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fce1049dedb654b3e72329565591f53e = L.map(
+                "map_fce1049dedb654b3e72329565591f53e",
+                {
+                    center: [39.8283, -98.5795],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_fce1049dedb654b3e72329565591f53e);
+
+            
+
+        
+    
+            var tile_layer_d8a83b048e878443518d3a179aafcf34 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d8a83b048e878443518d3a179aafcf34.addTo(map_fce1049dedb654b3e72329565591f53e);
+        
+    
+            var tile_layer_5f988b7a8b9986ec5b04ad0236b5fe27 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_5f988b7a8b9986ec5b04ad0236b5fe27.addTo(map_fce1049dedb654b3e72329565591f53e);
+        
+    
+            var tile_layer_438e9a553f074a882d12b5ab2465aac6 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Esri",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_438e9a553f074a882d12b5ab2465aac6.addTo(map_fce1049dedb654b3e72329565591f53e);
+        
+    
+            var feature_group_275c61158971d0b1d06e45fcd71b480b = L.featureGroup(
+                {
+}
+            );
+        
+    
+            feature_group_275c61158971d0b1d06e45fcd71b480b.addTo(map_fce1049dedb654b3e72329565591f53e);
+        
+    
+            var feature_group_6b209193f4f688bd9e4d5e0fff9ad0a7 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_e93f180d62480430ebcbf51bd1438082 = L.circleMarker(
+                [28.05, -98.029],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6b209193f4f688bd9e4d5e0fff9ad0a7);
+        
+    
+        var popup_7f647a221da8cb3147e6c52fb0c74b28 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2cba7c6eeef7d872e54bb3fc4c764b9d = $(`<div id="html_2cba7c6eeef7d872e54bb3fc4c764b9d" style="width: 100.0%; height: 100.0%;">Jim_Wells_County - 3.0"</div>`)[0];
+                popup_7f647a221da8cb3147e6c52fb0c74b28.setContent(html_2cba7c6eeef7d872e54bb3fc4c764b9d);
+            
+        
+
+        circle_marker_e93f180d62480430ebcbf51bd1438082.bindPopup(popup_7f647a221da8cb3147e6c52fb0c74b28)
+        ;
+
+        
+    
+    
+            var circle_marker_3a8174036dae615b7e0bd29427fc44f1 = L.circleMarker(
+                [28.041, -98.082],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6b209193f4f688bd9e4d5e0fff9ad0a7);
+        
+    
+        var popup_09a9781ac19095ee1898bcee10b44882 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_55219a2cb32f49629439329d99556d07 = $(`<div id="html_55219a2cb32f49629439329d99556d07" style="width: 100.0%; height: 100.0%;">Jim_Wells_County - 3.5"</div>`)[0];
+                popup_09a9781ac19095ee1898bcee10b44882.setContent(html_55219a2cb32f49629439329d99556d07);
+            
+        
+
+        circle_marker_3a8174036dae615b7e0bd29427fc44f1.bindPopup(popup_09a9781ac19095ee1898bcee10b44882)
+        ;
+
+        
+    
+    
+            var circle_marker_0019ed129089d7c962ab360ac2a74370 = L.circleMarker(
+                [28.034, -98.043],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6b209193f4f688bd9e4d5e0fff9ad0a7);
+        
+    
+        var popup_8a5dc97f62ca064b7d11923aece74cc9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_01a0973a920ac5e86ce9f56bc2ec3315 = $(`<div id="html_01a0973a920ac5e86ce9f56bc2ec3315" style="width: 100.0%; height: 100.0%;">Jim_Wells_County - 3.75"</div>`)[0];
+                popup_8a5dc97f62ca064b7d11923aece74cc9.setContent(html_01a0973a920ac5e86ce9f56bc2ec3315);
+            
+        
+
+        circle_marker_0019ed129089d7c962ab360ac2a74370.bindPopup(popup_8a5dc97f62ca064b7d11923aece74cc9)
+        ;
+
+        
+    
+    
+            var circle_marker_e37741f69279f42ee30838e5b7978b24 = L.circleMarker(
+                [28.033, -98.062],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6b209193f4f688bd9e4d5e0fff9ad0a7);
+        
+    
+        var popup_f9a5bd77853860b77ef0847ca95f5a6b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_33a3a52a7b01ba4c2dd99030725ee4f9 = $(`<div id="html_33a3a52a7b01ba4c2dd99030725ee4f9" style="width: 100.0%; height: 100.0%;">Jim_Wells_County - 3.75"</div>`)[0];
+                popup_f9a5bd77853860b77ef0847ca95f5a6b.setContent(html_33a3a52a7b01ba4c2dd99030725ee4f9);
+            
+        
+
+        circle_marker_e37741f69279f42ee30838e5b7978b24.bindPopup(popup_f9a5bd77853860b77ef0847ca95f5a6b)
+        ;
+
+        
+    
+    
+            var circle_marker_07c72c9fb5672f18dc7b54cd075bdc0d = L.circleMarker(
+                [28.034, -98.095],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6b209193f4f688bd9e4d5e0fff9ad0a7);
+        
+    
+        var popup_48819b97df5d98cef3dfd1ea8a3c59af = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e9a974419b45eac9316cd23a6ac29863 = $(`<div id="html_e9a974419b45eac9316cd23a6ac29863" style="width: 100.0%; height: 100.0%;">Midway - 3.5"</div>`)[0];
+                popup_48819b97df5d98cef3dfd1ea8a3c59af.setContent(html_e9a974419b45eac9316cd23a6ac29863);
+            
+        
+
+        circle_marker_07c72c9fb5672f18dc7b54cd075bdc0d.bindPopup(popup_48819b97df5d98cef3dfd1ea8a3c59af)
+        ;
+
+        
+    
+    
+            var circle_marker_d4f72db036e5b033f01fa56aa087e122 = L.circleMarker(
+                [27.233, -99.126],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6b209193f4f688bd9e4d5e0fff9ad0a7);
+        
+    
+        var popup_e79acf33dab99777c2fc2218f19df1f8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e939cca7c4d5686740a240f167b06c21 = $(`<div id="html_e939cca7c4d5686740a240f167b06c21" style="width: 100.0%; height: 100.0%;">Zapata_County - 3.0"</div>`)[0];
+                popup_e79acf33dab99777c2fc2218f19df1f8.setContent(html_e939cca7c4d5686740a240f167b06c21);
+            
+        
+
+        circle_marker_d4f72db036e5b033f01fa56aa087e122.bindPopup(popup_e79acf33dab99777c2fc2218f19df1f8)
+        ;
+
+        
+    
+    
+            var circle_marker_4a5e77496d3ff9147ff57f74bdf44687 = L.circleMarker(
+                [27.035, -99.291],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6b209193f4f688bd9e4d5e0fff9ad0a7);
+        
+    
+        var popup_1d4e48ddda840986d724289c79cc847f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6b6294ded5e70b4d8c1bd36e7a4d34c3 = $(`<div id="html_6b6294ded5e70b4d8c1bd36e7a4d34c3" style="width: 100.0%; height: 100.0%;">Zapata_County - 3.25"</div>`)[0];
+                popup_1d4e48ddda840986d724289c79cc847f.setContent(html_6b6294ded5e70b4d8c1bd36e7a4d34c3);
+            
+        
+
+        circle_marker_4a5e77496d3ff9147ff57f74bdf44687.bindPopup(popup_1d4e48ddda840986d724289c79cc847f)
+        ;
+
+        
+    
+    
+            feature_group_6b209193f4f688bd9e4d5e0fff9ad0a7.addTo(map_fce1049dedb654b3e72329565591f53e);
+        
+    
+            var feature_group_15965550852d9e8cbe41555f8ca07f22 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            feature_group_15965550852d9e8cbe41555f8ca07f22.addTo(map_fce1049dedb654b3e72329565591f53e);
+        
+    
+            var feature_group_5172121f7ba0bee1d2a037b100567288 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_5cedbd827b35c396423a2d6de8287cbc = L.circleMarker(
+                [34.883, -114.429],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5172121f7ba0bee1d2a037b100567288);
+        
+    
+        var popup_ac13dedf33e1cb1178df9f94a37fa904 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4b94ab7116a446cc64b2aff8c11d7211 = $(`<div id="html_4b94ab7116a446cc64b2aff8c11d7211" style="width: 100.0%; height: 100.0%;">Golden_Shores - 2.0"</div>`)[0];
+                popup_ac13dedf33e1cb1178df9f94a37fa904.setContent(html_4b94ab7116a446cc64b2aff8c11d7211);
+            
+        
+
+        circle_marker_5cedbd827b35c396423a2d6de8287cbc.bindPopup(popup_ac13dedf33e1cb1178df9f94a37fa904)
+        ;
+
+        
+    
+    
+            var circle_marker_859ec4398d2f86be02fbdd9adcdf46fe = L.circleMarker(
+                [34.853, -114.412],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5172121f7ba0bee1d2a037b100567288);
+        
+    
+        var popup_8c87f97dbea78ed89628c4c85719e2ae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2da585fa35f140a086a2fbd659fde9ad = $(`<div id="html_2da585fa35f140a086a2fbd659fde9ad" style="width: 100.0%; height: 100.0%;">Mohave_County - 2.0"</div>`)[0];
+                popup_8c87f97dbea78ed89628c4c85719e2ae.setContent(html_2da585fa35f140a086a2fbd659fde9ad);
+            
+        
+
+        circle_marker_859ec4398d2f86be02fbdd9adcdf46fe.bindPopup(popup_8c87f97dbea78ed89628c4c85719e2ae)
+        ;
+
+        
+    
+    
+            var circle_marker_0c790faeb42641941a26ee2087caefd6 = L.circleMarker(
+                [34.942, -114.519],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5172121f7ba0bee1d2a037b100567288);
+        
+    
+        var popup_ecc910a57e58e6bd345cd2207332a91f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cb9e7a4e7990e679429f431e91f91e28 = $(`<div id="html_cb9e7a4e7990e679429f431e91f91e28" style="width: 100.0%; height: 100.0%;">Mohave_County - 2.25"</div>`)[0];
+                popup_ecc910a57e58e6bd345cd2207332a91f.setContent(html_cb9e7a4e7990e679429f431e91f91e28);
+            
+        
+
+        circle_marker_0c790faeb42641941a26ee2087caefd6.bindPopup(popup_ecc910a57e58e6bd345cd2207332a91f)
+        ;
+
+        
+    
+    
+            var circle_marker_8f6dae59a0a82f84ae601c1524b30680 = L.circleMarker(
+                [34.901, -114.479],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5172121f7ba0bee1d2a037b100567288);
+        
+    
+        var popup_b22ccf3eee5e49bb63bc659346c7b65d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ed57ddf661ab5842acaba51dccb6de95 = $(`<div id="html_ed57ddf661ab5842acaba51dccb6de95" style="width: 100.0%; height: 100.0%;">Mohave_County - 2.5"</div>`)[0];
+                popup_b22ccf3eee5e49bb63bc659346c7b65d.setContent(html_ed57ddf661ab5842acaba51dccb6de95);
+            
+        
+
+        circle_marker_8f6dae59a0a82f84ae601c1524b30680.bindPopup(popup_b22ccf3eee5e49bb63bc659346c7b65d)
+        ;
+
+        
+    
+    
+            var circle_marker_00c8ee30f6aebf6e23176c3e584e5bcb = L.circleMarker(
+                [30.371, -81.466],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5172121f7ba0bee1d2a037b100567288);
+        
+    
+        var popup_e8c0264ce05527644bdefea12d5a2f69 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f73d0fd3529b374718c2725ef2cfb410 = $(`<div id="html_f73d0fd3529b374718c2725ef2cfb410" style="width: 100.0%; height: 100.0%;">Jacksonville - 2.25"</div>`)[0];
+                popup_e8c0264ce05527644bdefea12d5a2f69.setContent(html_f73d0fd3529b374718c2725ef2cfb410);
+            
+        
+
+        circle_marker_00c8ee30f6aebf6e23176c3e584e5bcb.bindPopup(popup_e8c0264ce05527644bdefea12d5a2f69)
+        ;
+
+        
+    
+    
+            var circle_marker_8549c087e411358bd1c43095b0818002 = L.circleMarker(
+                [30.333, -92.096],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5172121f7ba0bee1d2a037b100567288);
+        
+    
+        var popup_4104e484475fab669f28c4c8b49f6ae1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9b5083eeddc4129c0747e32a683d1056 = $(`<div id="html_9b5083eeddc4129c0747e32a683d1056" style="width: 100.0%; height: 100.0%;">Cankton - 2.0"</div>`)[0];
+                popup_4104e484475fab669f28c4c8b49f6ae1.setContent(html_9b5083eeddc4129c0747e32a683d1056);
+            
+        
+
+        circle_marker_8549c087e411358bd1c43095b0818002.bindPopup(popup_4104e484475fab669f28c4c8b49f6ae1)
+        ;
+
+        
+    
+    
+            var circle_marker_53dbad0c7fcf5623b0ee4a221cdb1abf = L.circleMarker(
+                [30.41, -90.574],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5172121f7ba0bee1d2a037b100567288);
+        
+    
+        var popup_4df7dc9108c40d0bafb8d0949aa82230 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_abf00f4fa3aa5c371127b6013ad4a749 = $(`<div id="html_abf00f4fa3aa5c371127b6013ad4a749" style="width: 100.0%; height: 100.0%;">Springfield - 2.5"</div>`)[0];
+                popup_4df7dc9108c40d0bafb8d0949aa82230.setContent(html_abf00f4fa3aa5c371127b6013ad4a749);
+            
+        
+
+        circle_marker_53dbad0c7fcf5623b0ee4a221cdb1abf.bindPopup(popup_4df7dc9108c40d0bafb8d0949aa82230)
+        ;
+
+        
+    
+    
+            var circle_marker_63d78ec6388ed3cd8fbc248a4ba9cc81 = L.circleMarker(
+                [28.757, -97.505],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5172121f7ba0bee1d2a037b100567288);
+        
+    
+        var popup_59a13361ebe0c6b158bd34f1c5c29af3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7cb6467a8a2990994bc30b5e3c5ecd59 = $(`<div id="html_7cb6467a8a2990994bc30b5e3c5ecd59" style="width: 100.0%; height: 100.0%;">Goliad_County - 2.0"</div>`)[0];
+                popup_59a13361ebe0c6b158bd34f1c5c29af3.setContent(html_7cb6467a8a2990994bc30b5e3c5ecd59);
+            
+        
+
+        circle_marker_63d78ec6388ed3cd8fbc248a4ba9cc81.bindPopup(popup_59a13361ebe0c6b158bd34f1c5c29af3)
+        ;
+
+        
+    
+    
+            var circle_marker_b611244d3e1ed5e2e93f0ba3bdd42517 = L.circleMarker(
+                [28.766, -96.522],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5172121f7ba0bee1d2a037b100567288);
+        
+    
+        var popup_53a1cbd9b7fad4649428ff76f34f59cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eecf078142d08ffe994a9ad086cecbfe = $(`<div id="html_eecf078142d08ffe994a9ad086cecbfe" style="width: 100.0%; height: 100.0%;">Jackson_County - 2.0"</div>`)[0];
+                popup_53a1cbd9b7fad4649428ff76f34f59cf.setContent(html_eecf078142d08ffe994a9ad086cecbfe);
+            
+        
+
+        circle_marker_b611244d3e1ed5e2e93f0ba3bdd42517.bindPopup(popup_53a1cbd9b7fad4649428ff76f34f59cf)
+        ;
+
+        
+    
+    
+            var circle_marker_248604c11b144aebe20bdb7f5d8b2203 = L.circleMarker(
+                [27.256, -98.926],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5172121f7ba0bee1d2a037b100567288);
+        
+    
+        var popup_f3dbb163c9a01e7d6c496109cd74830a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6e124794554ff13e06c382e7d9a288ce = $(`<div id="html_6e124794554ff13e06c382e7d9a288ce" style="width: 100.0%; height: 100.0%;">Jim_Hogg_County - 2.0"</div>`)[0];
+                popup_f3dbb163c9a01e7d6c496109cd74830a.setContent(html_6e124794554ff13e06c382e7d9a288ce);
+            
+        
+
+        circle_marker_248604c11b144aebe20bdb7f5d8b2203.bindPopup(popup_f3dbb163c9a01e7d6c496109cd74830a)
+        ;
+
+        
+    
+    
+            var circle_marker_107db6c7c27ca878bc9e4b8f23aae66b = L.circleMarker(
+                [26.924, -98.87],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5172121f7ba0bee1d2a037b100567288);
+        
+    
+        var popup_7b0a0fcd1ca19a39654fcab24fd8f9ce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_da3075791c3767d86548a81ede7e372e = $(`<div id="html_da3075791c3767d86548a81ede7e372e" style="width: 100.0%; height: 100.0%;">Jim_Hogg_County - 2.25"</div>`)[0];
+                popup_7b0a0fcd1ca19a39654fcab24fd8f9ce.setContent(html_da3075791c3767d86548a81ede7e372e);
+            
+        
+
+        circle_marker_107db6c7c27ca878bc9e4b8f23aae66b.bindPopup(popup_7b0a0fcd1ca19a39654fcab24fd8f9ce)
+        ;
+
+        
+    
+    
+            var circle_marker_6b6a5fea5031e06ed7fbbf258d2c514d = L.circleMarker(
+                [28.054, -98.137],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5172121f7ba0bee1d2a037b100567288);
+        
+    
+        var popup_2ac1391b3e0e441a6baef7b59d26a4bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fe1d5ba08c7af23efc4cbed96501c5e5 = $(`<div id="html_fe1d5ba08c7af23efc4cbed96501c5e5" style="width: 100.0%; height: 100.0%;">Jim_Wells_County - 2.0"</div>`)[0];
+                popup_2ac1391b3e0e441a6baef7b59d26a4bc.setContent(html_fe1d5ba08c7af23efc4cbed96501c5e5);
+            
+        
+
+        circle_marker_6b6a5fea5031e06ed7fbbf258d2c514d.bindPopup(popup_2ac1391b3e0e441a6baef7b59d26a4bc)
+        ;
+
+        
+    
+    
+            var circle_marker_9604f6c1c1da942312387f5d5fc1b1e4 = L.circleMarker(
+                [28.05, -98.012],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5172121f7ba0bee1d2a037b100567288);
+        
+    
+        var popup_921011da89c836076853e5bc6914af16 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f9deb516efe72c9c1ca8c2728b367283 = $(`<div id="html_f9deb516efe72c9c1ca8c2728b367283" style="width: 100.0%; height: 100.0%;">Jim_Wells_County - 2.25"</div>`)[0];
+                popup_921011da89c836076853e5bc6914af16.setContent(html_f9deb516efe72c9c1ca8c2728b367283);
+            
+        
+
+        circle_marker_9604f6c1c1da942312387f5d5fc1b1e4.bindPopup(popup_921011da89c836076853e5bc6914af16)
+        ;
+
+        
+    
+    
+            var circle_marker_40e3eee8a1c071ae56e7d719df54f7ed = L.circleMarker(
+                [28.05, -97.996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5172121f7ba0bee1d2a037b100567288);
+        
+    
+        var popup_b29ee22c2f67a75264004e97d373bdb2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_15c7d1ef8827be52f9297e07f3054cbe = $(`<div id="html_15c7d1ef8827be52f9297e07f3054cbe" style="width: 100.0%; height: 100.0%;">Jim_Wells_County - 2.25"</div>`)[0];
+                popup_b29ee22c2f67a75264004e97d373bdb2.setContent(html_15c7d1ef8827be52f9297e07f3054cbe);
+            
+        
+
+        circle_marker_40e3eee8a1c071ae56e7d719df54f7ed.bindPopup(popup_b29ee22c2f67a75264004e97d373bdb2)
+        ;
+
+        
+    
+    
+            var circle_marker_d2aae4cc44faded7b2e016a561cfe2c7 = L.circleMarker(
+                [28.035, -98.128],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5172121f7ba0bee1d2a037b100567288);
+        
+    
+        var popup_ea48c7b82a2ef707eef6c7c79c5ad3ae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bd3c3b38f47b46b542366bb79c39c3b9 = $(`<div id="html_bd3c3b38f47b46b542366bb79c39c3b9" style="width: 100.0%; height: 100.0%;">Jim_Wells_County - 2.5"</div>`)[0];
+                popup_ea48c7b82a2ef707eef6c7c79c5ad3ae.setContent(html_bd3c3b38f47b46b542366bb79c39c3b9);
+            
+        
+
+        circle_marker_d2aae4cc44faded7b2e016a561cfe2c7.bindPopup(popup_ea48c7b82a2ef707eef6c7c79c5ad3ae)
+        ;
+
+        
+    
+    
+            var circle_marker_f6704dc69155750a59a53850edbfcdb9 = L.circleMarker(
+                [27.226, -97.982],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5172121f7ba0bee1d2a037b100567288);
+        
+    
+        var popup_f08e493e15bdeccc64a5739aeec4244a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2c5487dc7e5bc0f8a1657b643ef9253c = $(`<div id="html_2c5487dc7e5bc0f8a1657b643ef9253c" style="width: 100.0%; height: 100.0%;">Kleberg_County - 2.0"</div>`)[0];
+                popup_f08e493e15bdeccc64a5739aeec4244a.setContent(html_2c5487dc7e5bc0f8a1657b643ef9253c);
+            
+        
+
+        circle_marker_f6704dc69155750a59a53850edbfcdb9.bindPopup(popup_f08e493e15bdeccc64a5739aeec4244a)
+        ;
+
+        
+    
+    
+            var circle_marker_f0a0214e9cb1657af0a2296a70abebae = L.circleMarker(
+                [28.31, -99.392],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5172121f7ba0bee1d2a037b100567288);
+        
+    
+        var popup_f661872dee1fa97eab7f9d6f370f58c3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_52f538832186a1dab01bee75d7c949d0 = $(`<div id="html_52f538832186a1dab01bee75d7c949d0" style="width: 100.0%; height: 100.0%;">La_Salle_County - 2.25"</div>`)[0];
+                popup_f661872dee1fa97eab7f9d6f370f58c3.setContent(html_52f538832186a1dab01bee75d7c949d0);
+            
+        
+
+        circle_marker_f0a0214e9cb1657af0a2296a70abebae.bindPopup(popup_f661872dee1fa97eab7f9d6f370f58c3)
+        ;
+
+        
+    
+    
+            var circle_marker_d4839ac51a7aed592c41275569f30407 = L.circleMarker(
+                [28.052, -97.931],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5172121f7ba0bee1d2a037b100567288);
+        
+    
+        var popup_1d6b7b2cd14aa63c45aeeaf1637acb8b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dd2fec569db84817da423d0220ef3263 = $(`<div id="html_dd2fec569db84817da423d0220ef3263" style="width: 100.0%; height: 100.0%;">Pernitas_Point - 2.0"</div>`)[0];
+                popup_1d6b7b2cd14aa63c45aeeaf1637acb8b.setContent(html_dd2fec569db84817da423d0220ef3263);
+            
+        
+
+        circle_marker_d4839ac51a7aed592c41275569f30407.bindPopup(popup_1d6b7b2cd14aa63c45aeeaf1637acb8b)
+        ;
+
+        
+    
+    
+            var circle_marker_681be2e1849860142099433934a4ebe6 = L.circleMarker(
+                [27.017, -99.26],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5172121f7ba0bee1d2a037b100567288);
+        
+    
+        var popup_e5e5adf714efaffb5456252a74e458e8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef4e9286a96885fb2b367ca354a4b743 = $(`<div id="html_ef4e9286a96885fb2b367ca354a4b743" style="width: 100.0%; height: 100.0%;">Zapata_County - 2.0"</div>`)[0];
+                popup_e5e5adf714efaffb5456252a74e458e8.setContent(html_ef4e9286a96885fb2b367ca354a4b743);
+            
+        
+
+        circle_marker_681be2e1849860142099433934a4ebe6.bindPopup(popup_e5e5adf714efaffb5456252a74e458e8)
+        ;
+
+        
+    
+    
+            var circle_marker_3c2fa7240973b8dc4a93052453350621 = L.circleMarker(
+                [27.076, -99.433],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5172121f7ba0bee1d2a037b100567288);
+        
+    
+        var popup_3fce4ff08ec616c817bce890992da76c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_96bd956678b3fd48e4851d55570d6a69 = $(`<div id="html_96bd956678b3fd48e4851d55570d6a69" style="width: 100.0%; height: 100.0%;">Zapata_County - 2.25"</div>`)[0];
+                popup_3fce4ff08ec616c817bce890992da76c.setContent(html_96bd956678b3fd48e4851d55570d6a69);
+            
+        
+
+        circle_marker_3c2fa7240973b8dc4a93052453350621.bindPopup(popup_3fce4ff08ec616c817bce890992da76c)
+        ;
+
+        
+    
+    
+            var circle_marker_4512facb240e7be839ed32c9efd2ce52 = L.circleMarker(
+                [27.089, -99.398],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5172121f7ba0bee1d2a037b100567288);
+        
+    
+        var popup_3a290085972513658d1f0ccc3b44b6b5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f1a4906e7113b49b1a858963b60cd784 = $(`<div id="html_f1a4906e7113b49b1a858963b60cd784" style="width: 100.0%; height: 100.0%;">Zapata_County - 2.25"</div>`)[0];
+                popup_3a290085972513658d1f0ccc3b44b6b5.setContent(html_f1a4906e7113b49b1a858963b60cd784);
+            
+        
+
+        circle_marker_4512facb240e7be839ed32c9efd2ce52.bindPopup(popup_3a290085972513658d1f0ccc3b44b6b5)
+        ;
+
+        
+    
+    
+            var circle_marker_0d5c7e48e7d6348beb392cd9765876e3 = L.circleMarker(
+                [27.066, -99.367],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5172121f7ba0bee1d2a037b100567288);
+        
+    
+        var popup_8c56bdae465c6da845375ce6f52db71d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d4d33a8e6c9e0a08ade69dda696d2496 = $(`<div id="html_d4d33a8e6c9e0a08ade69dda696d2496" style="width: 100.0%; height: 100.0%;">Zapata_County - 2.25"</div>`)[0];
+                popup_8c56bdae465c6da845375ce6f52db71d.setContent(html_d4d33a8e6c9e0a08ade69dda696d2496);
+            
+        
+
+        circle_marker_0d5c7e48e7d6348beb392cd9765876e3.bindPopup(popup_8c56bdae465c6da845375ce6f52db71d)
+        ;
+
+        
+    
+    
+            var circle_marker_dd2dfcead2a8d66acc8f040cc1d4c307 = L.circleMarker(
+                [27.052, -99.319],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5172121f7ba0bee1d2a037b100567288);
+        
+    
+        var popup_e675a360f3d7ec03948880a0fcef9ce3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c366119be3915349b01eea96532a98be = $(`<div id="html_c366119be3915349b01eea96532a98be" style="width: 100.0%; height: 100.0%;">Zapata_County - 2.25"</div>`)[0];
+                popup_e675a360f3d7ec03948880a0fcef9ce3.setContent(html_c366119be3915349b01eea96532a98be);
+            
+        
+
+        circle_marker_dd2dfcead2a8d66acc8f040cc1d4c307.bindPopup(popup_e675a360f3d7ec03948880a0fcef9ce3)
+        ;
+
+        
+    
+    
+            var circle_marker_2747efb1a1efac5fca24194717be36ca = L.circleMarker(
+                [27.014, -99.328],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5172121f7ba0bee1d2a037b100567288);
+        
+    
+        var popup_c7f9ad659e414f86a9a241c618109834 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2963ba1ce5180f541d5ae6a796b11aa2 = $(`<div id="html_2963ba1ce5180f541d5ae6a796b11aa2" style="width: 100.0%; height: 100.0%;">Zapata_County - 2.5"</div>`)[0];
+                popup_c7f9ad659e414f86a9a241c618109834.setContent(html_2963ba1ce5180f541d5ae6a796b11aa2);
+            
+        
+
+        circle_marker_2747efb1a1efac5fca24194717be36ca.bindPopup(popup_c7f9ad659e414f86a9a241c618109834)
+        ;
+
+        
+    
+    
+            var circle_marker_c40d775000ddaf4fa1a11f8304ec6112 = L.circleMarker(
+                [27.038, -99.27],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5172121f7ba0bee1d2a037b100567288);
+        
+    
+        var popup_2394a2db4e6ad7807d2663613d544119 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e3311c4d3638c0588480c503e85b615d = $(`<div id="html_e3311c4d3638c0588480c503e85b615d" style="width: 100.0%; height: 100.0%;">Zapata_County - 2.5"</div>`)[0];
+                popup_2394a2db4e6ad7807d2663613d544119.setContent(html_e3311c4d3638c0588480c503e85b615d);
+            
+        
+
+        circle_marker_c40d775000ddaf4fa1a11f8304ec6112.bindPopup(popup_2394a2db4e6ad7807d2663613d544119)
+        ;
+
+        
+    
+    
+            var circle_marker_152e19d573aeb369943b002a9ebd504d = L.circleMarker(
+                [27.026, -99.276],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5172121f7ba0bee1d2a037b100567288);
+        
+    
+        var popup_43c9d7a070c04cb0158fbda65a891c9c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9b14a2a3b48b65758c31b2ffd5d64657 = $(`<div id="html_9b14a2a3b48b65758c31b2ffd5d64657" style="width: 100.0%; height: 100.0%;">Zapata_County - 2.5"</div>`)[0];
+                popup_43c9d7a070c04cb0158fbda65a891c9c.setContent(html_9b14a2a3b48b65758c31b2ffd5d64657);
+            
+        
+
+        circle_marker_152e19d573aeb369943b002a9ebd504d.bindPopup(popup_43c9d7a070c04cb0158fbda65a891c9c)
+        ;
+
+        
+    
+    
+            feature_group_5172121f7ba0bee1d2a037b100567288.addTo(map_fce1049dedb654b3e72329565591f53e);
+        
+    
+            var feature_group_76eaadb17d201c039475bfe1bd7f3edc = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_ea21aeca783da0a7781b0f91e888bf34 = L.circle(
+                [34.883, -114.429],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_76eaadb17d201c039475bfe1bd7f3edc);
+        
+    
+            var circle_3d37e6b1492d6f1d0d9a36e59b4148f7 = L.circle(
+                [34.853, -114.412],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_76eaadb17d201c039475bfe1bd7f3edc);
+        
+    
+            var circle_2886a687a44351beb4160f3bd68ab731 = L.circle(
+                [34.942, -114.519],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_76eaadb17d201c039475bfe1bd7f3edc);
+        
+    
+            var circle_7ff8e9caca902c44b416bbaa012456c2 = L.circle(
+                [34.901, -114.479],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_76eaadb17d201c039475bfe1bd7f3edc);
+        
+    
+            var circle_5bc5f822d5da17657c303f473eab0686 = L.circle(
+                [30.371, -81.466],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_76eaadb17d201c039475bfe1bd7f3edc);
+        
+    
+            var circle_1a305a50e2fd038a490669a7aaf7096d = L.circle(
+                [30.333, -92.096],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_76eaadb17d201c039475bfe1bd7f3edc);
+        
+    
+            var circle_0f2069eb28d3382d4d69cce5e7bc8332 = L.circle(
+                [30.41, -90.574],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_76eaadb17d201c039475bfe1bd7f3edc);
+        
+    
+            var circle_3c2f4520bb1e5002cfe12ab0a3825222 = L.circle(
+                [28.757, -97.505],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_76eaadb17d201c039475bfe1bd7f3edc);
+        
+    
+            var circle_5e27bb5a166820b3701b362626a0d58f = L.circle(
+                [28.766, -96.522],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_76eaadb17d201c039475bfe1bd7f3edc);
+        
+    
+            var circle_470408fcbdbd435fb80b2e3fb35f13dd = L.circle(
+                [27.256, -98.926],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_76eaadb17d201c039475bfe1bd7f3edc);
+        
+    
+            var circle_8339a6c4d1e804a7c93d9959118a502b = L.circle(
+                [26.924, -98.87],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_76eaadb17d201c039475bfe1bd7f3edc);
+        
+    
+            var circle_2455cb6575477f104d91b3c87fd168f4 = L.circle(
+                [28.054, -98.137],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_76eaadb17d201c039475bfe1bd7f3edc);
+        
+    
+            var circle_3dd5e4abe6f52609097e1e51d60a5a67 = L.circle(
+                [28.05, -98.012],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_76eaadb17d201c039475bfe1bd7f3edc);
+        
+    
+            var circle_e374dc943e86e451bf037603a605b879 = L.circle(
+                [28.05, -97.996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_76eaadb17d201c039475bfe1bd7f3edc);
+        
+    
+            var circle_dbb8bc594b82a1c2b7ef06c72bcef7a1 = L.circle(
+                [28.035, -98.128],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_76eaadb17d201c039475bfe1bd7f3edc);
+        
+    
+            var circle_e1700cb79088694d2ed9fef8ba88bc3d = L.circle(
+                [28.05, -98.029],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_76eaadb17d201c039475bfe1bd7f3edc);
+        
+    
+            var circle_ec367c114f4e1b3794149031b370ddba = L.circle(
+                [28.041, -98.082],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_76eaadb17d201c039475bfe1bd7f3edc);
+        
+    
+            var circle_c8da92dcd0d1e7e8c1d181c9759b81f7 = L.circle(
+                [28.034, -98.043],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_76eaadb17d201c039475bfe1bd7f3edc);
+        
+    
+            var circle_df0704871937991082a3c685462ac027 = L.circle(
+                [28.033, -98.062],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_76eaadb17d201c039475bfe1bd7f3edc);
+        
+    
+            var circle_b6dc1eb5f9f3b5914f547a2644ef2a35 = L.circle(
+                [27.226, -97.982],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_76eaadb17d201c039475bfe1bd7f3edc);
+        
+    
+            var circle_bbe302cf69d1bbecc5fcd852967d3102 = L.circle(
+                [28.31, -99.392],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_76eaadb17d201c039475bfe1bd7f3edc);
+        
+    
+            var circle_a978c0c73cc7038745923aaf0d5a2e55 = L.circle(
+                [28.034, -98.095],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_76eaadb17d201c039475bfe1bd7f3edc);
+        
+    
+            var circle_e884ab610441de2940c474a37badd3fc = L.circle(
+                [28.052, -97.931],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_76eaadb17d201c039475bfe1bd7f3edc);
+        
+    
+            var circle_c9a9635538efa2ea0f79da2c92fba593 = L.circle(
+                [27.017, -99.26],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_76eaadb17d201c039475bfe1bd7f3edc);
+        
+    
+            var circle_cbf96a3c6408d793aae09cb2ff46b4c7 = L.circle(
+                [27.076, -99.433],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_76eaadb17d201c039475bfe1bd7f3edc);
+        
+    
+            var circle_16c686b5673622b94532b3e7a62a41cd = L.circle(
+                [27.089, -99.398],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_76eaadb17d201c039475bfe1bd7f3edc);
+        
+    
+            var circle_c108dbca09f26e6769c35c28930806d2 = L.circle(
+                [27.066, -99.367],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_76eaadb17d201c039475bfe1bd7f3edc);
+        
+    
+            var circle_541c5be930848dee87c445c1ca6a41bd = L.circle(
+                [27.052, -99.319],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_76eaadb17d201c039475bfe1bd7f3edc);
+        
+    
+            var circle_7894ade2c1bfe73e6ae8f191462f4164 = L.circle(
+                [27.014, -99.328],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_76eaadb17d201c039475bfe1bd7f3edc);
+        
+    
+            var circle_6dfdb22286133d4d9154f15b89e73b5f = L.circle(
+                [27.038, -99.27],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_76eaadb17d201c039475bfe1bd7f3edc);
+        
+    
+            var circle_9e40711b09c1e46e7aaf3c16968dae85 = L.circle(
+                [27.026, -99.276],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_76eaadb17d201c039475bfe1bd7f3edc);
+        
+    
+            var circle_19da4b5fa4d4f444d923128bda7cc1f4 = L.circle(
+                [27.233, -99.126],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_76eaadb17d201c039475bfe1bd7f3edc);
+        
+    
+            var circle_27b7541c62e32a42dfabb57e65d5de7a = L.circle(
+                [27.035, -99.291],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_76eaadb17d201c039475bfe1bd7f3edc);
+        
+    
+            feature_group_76eaadb17d201c039475bfe1bd7f3edc.addTo(map_fce1049dedb654b3e72329565591f53e);
+        
+    
+            var layer_control_d5aa88d6eb64f539e7023a8937c37a1a_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_d8a83b048e878443518d3a179aafcf34,
+                    "Standard" : tile_layer_5f988b7a8b9986ec5b04ad0236b5fe27,
+                    "Satellite" : tile_layer_438e9a553f074a882d12b5ab2465aac6,
+                },
+                overlays :  {
+                    "Red (\u2265 4\")" : feature_group_275c61158971d0b1d06e45fcd71b480b,
+                    "Purple (3\" \u2013 3.99\")" : feature_group_6b209193f4f688bd9e4d5e0fff9ad0a7,
+                    "Orange (2.51\" \u2013 2.99\")" : feature_group_15965550852d9e8cbe41555f8ca07f22,
+                    "Blue (\u003c 2.5\")" : feature_group_5172121f7ba0bee1d2a037b100567288,
+                    "1-Mile Radius Zones" : feature_group_76eaadb17d201c039475bfe1bd7f3edc,
+                },
+            };
+            let layer_control_d5aa88d6eb64f539e7023a8937c37a1a = L.control.layers(
+                layer_control_d5aa88d6eb64f539e7023a8937c37a1a_layers.base_layers,
+                layer_control_d5aa88d6eb64f539e7023a8937c37a1a_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_fce1049dedb654b3e72329565591f53e);
+
+        
+</script>
+</html>

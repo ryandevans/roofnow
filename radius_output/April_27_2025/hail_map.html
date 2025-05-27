@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_62c36b920ed1038a75d47b58c67ac347 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_62c36b920ed1038a75d47b58c67ac347" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_62c36b920ed1038a75d47b58c67ac347 = L.map(
+                "map_62c36b920ed1038a75d47b58c67ac347",
+                {
+                    center: [39.8283, -98.5795],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_62c36b920ed1038a75d47b58c67ac347);
+
+            
+
+        
+    
+            var tile_layer_2418c8a8dd26dc3b3f8e0bf19d4d5c90 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_2418c8a8dd26dc3b3f8e0bf19d4d5c90.addTo(map_62c36b920ed1038a75d47b58c67ac347);
+        
+    
+            var tile_layer_b92f8d359efabb1a9909cf1ba182b3ce = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b92f8d359efabb1a9909cf1ba182b3ce.addTo(map_62c36b920ed1038a75d47b58c67ac347);
+        
+    
+            var tile_layer_ba4bacfb42350b6d7a87e86653a08b1c = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Esri",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ba4bacfb42350b6d7a87e86653a08b1c.addTo(map_62c36b920ed1038a75d47b58c67ac347);
+        
+    
+            var feature_group_7a7024797829249d98d694aeaba2505d = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_45b605d31ffb2c18f3ecaa3db185c7df = L.circleMarker(
+                [42.66, -102.726],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_7a7024797829249d98d694aeaba2505d);
+        
+    
+        var popup_4f32f8a95e69745362b4f0f35f4f44c8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_409069a0470b92ec505f4cd08d77bf67 = $(`<div id="html_409069a0470b92ec505f4cd08d77bf67" style="width: 100.0%; height: 100.0%;">Sheridan_County - 4.25"</div>`)[0];
+                popup_4f32f8a95e69745362b4f0f35f4f44c8.setContent(html_409069a0470b92ec505f4cd08d77bf67);
+            
+        
+
+        circle_marker_45b605d31ffb2c18f3ecaa3db185c7df.bindPopup(popup_4f32f8a95e69745362b4f0f35f4f44c8)
+        ;
+
+        
+    
+    
+            feature_group_7a7024797829249d98d694aeaba2505d.addTo(map_62c36b920ed1038a75d47b58c67ac347);
+        
+    
+            var feature_group_77982b505c92c4eb008fe6f5b3e7819b = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_45fd8901fd472a3ac5824cd1f2b2609b = L.circleMarker(
+                [34.449, -90.318],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_77982b505c92c4eb008fe6f5b3e7819b);
+        
+    
+        var popup_1f5dd604e832d7353824ecff233248cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5dbd1baefda94cee951c77199dac43f8 = $(`<div id="html_5dbd1baefda94cee951c77199dac43f8" style="width: 100.0%; height: 100.0%;">Tunica_County - 3.0"</div>`)[0];
+                popup_1f5dd604e832d7353824ecff233248cf.setContent(html_5dbd1baefda94cee951c77199dac43f8);
+            
+        
+
+        circle_marker_45fd8901fd472a3ac5824cd1f2b2609b.bindPopup(popup_1f5dd604e832d7353824ecff233248cf)
+        ;
+
+        
+    
+    
+            var circle_marker_795cc7f0277012f1933a212ae781d1c2 = L.circleMarker(
+                [42.65, -102.743],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_77982b505c92c4eb008fe6f5b3e7819b);
+        
+    
+        var popup_8a7f11284e5fe1bc8136e3bc91a6f582 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e4abedf8c5e86065f25ca816e5a5edb0 = $(`<div id="html_e4abedf8c5e86065f25ca816e5a5edb0" style="width: 100.0%; height: 100.0%;">Sheridan_County - 3.25"</div>`)[0];
+                popup_8a7f11284e5fe1bc8136e3bc91a6f582.setContent(html_e4abedf8c5e86065f25ca816e5a5edb0);
+            
+        
+
+        circle_marker_795cc7f0277012f1933a212ae781d1c2.bindPopup(popup_8a7f11284e5fe1bc8136e3bc91a6f582)
+        ;
+
+        
+    
+    
+            feature_group_77982b505c92c4eb008fe6f5b3e7819b.addTo(map_62c36b920ed1038a75d47b58c67ac347);
+        
+    
+            var feature_group_aa01569af9fb1cd12f0af12e47cf4986 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            feature_group_aa01569af9fb1cd12f0af12e47cf4986.addTo(map_62c36b920ed1038a75d47b58c67ac347);
+        
+    
+            var feature_group_8d3548595b5a8fa722c5abf32527210f = L.featureGroup(
+                {
+}
+            );
+        
+    
+            feature_group_8d3548595b5a8fa722c5abf32527210f.addTo(map_62c36b920ed1038a75d47b58c67ac347);
+        
+    
+            var feature_group_958d9a756a81500303becfd64ead2796 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_2fddd7c2b078d32a03aa87ad816da186 = L.circle(
+                [34.449, -90.318],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_958d9a756a81500303becfd64ead2796);
+        
+    
+            var circle_eeee9902c94cee161808c6e6f97b7102 = L.circle(
+                [42.65, -102.743],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_958d9a756a81500303becfd64ead2796);
+        
+    
+            var circle_5af0906cd89544ee489e7a33079f17c2 = L.circle(
+                [42.66, -102.726],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_958d9a756a81500303becfd64ead2796);
+        
+    
+            feature_group_958d9a756a81500303becfd64ead2796.addTo(map_62c36b920ed1038a75d47b58c67ac347);
+        
+    
+            var layer_control_7635fcd49825482f4510ee93a4424391_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_2418c8a8dd26dc3b3f8e0bf19d4d5c90,
+                    "Standard" : tile_layer_b92f8d359efabb1a9909cf1ba182b3ce,
+                    "Satellite" : tile_layer_ba4bacfb42350b6d7a87e86653a08b1c,
+                },
+                overlays :  {
+                    "Red (\u2265 4\")" : feature_group_7a7024797829249d98d694aeaba2505d,
+                    "Purple (3\" \u2013 3.99\")" : feature_group_77982b505c92c4eb008fe6f5b3e7819b,
+                    "Orange (2.51\" \u2013 2.99\")" : feature_group_aa01569af9fb1cd12f0af12e47cf4986,
+                    "Blue (\u003c 2.5\")" : feature_group_8d3548595b5a8fa722c5abf32527210f,
+                    "1-Mile Radius Zones" : feature_group_958d9a756a81500303becfd64ead2796,
+                },
+            };
+            let layer_control_7635fcd49825482f4510ee93a4424391 = L.control.layers(
+                layer_control_7635fcd49825482f4510ee93a4424391_layers.base_layers,
+                layer_control_7635fcd49825482f4510ee93a4424391_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_62c36b920ed1038a75d47b58c67ac347);
+
+        
+</script>
+</html>
