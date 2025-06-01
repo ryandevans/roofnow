@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f7fc2c37eb2c4fbf45c2a217602fcbf2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f7fc2c37eb2c4fbf45c2a217602fcbf2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f7fc2c37eb2c4fbf45c2a217602fcbf2 = L.map(
+                "map_f7fc2c37eb2c4fbf45c2a217602fcbf2",
+                {
+                    center: [39.8283, -98.5795],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_f7fc2c37eb2c4fbf45c2a217602fcbf2);
+
+            
+
+        
+    
+            var tile_layer_100550be4d01e807e04d4572aaf5bd97 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_100550be4d01e807e04d4572aaf5bd97.addTo(map_f7fc2c37eb2c4fbf45c2a217602fcbf2);
+        
+    
+            var tile_layer_ff813ac3585f9be5c0738402f5a9093b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ff813ac3585f9be5c0738402f5a9093b.addTo(map_f7fc2c37eb2c4fbf45c2a217602fcbf2);
+        
+    
+            var tile_layer_1876c754a3d57531306078f0333460ab = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Esri",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_1876c754a3d57531306078f0333460ab.addTo(map_f7fc2c37eb2c4fbf45c2a217602fcbf2);
+        
+    
+            var feature_group_781e155fbc4ec529ba912bdce7b88e03 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            feature_group_781e155fbc4ec529ba912bdce7b88e03.addTo(map_f7fc2c37eb2c4fbf45c2a217602fcbf2);
+        
+    
+            var feature_group_924ef3f6c4cd3ffaa844b2bd402e779b = L.featureGroup(
+                {
+}
+            );
+        
+    
+            feature_group_924ef3f6c4cd3ffaa844b2bd402e779b.addTo(map_f7fc2c37eb2c4fbf45c2a217602fcbf2);
+        
+    
+            var feature_group_4945c3d3ed0c0ea182844d25103c335b = L.featureGroup(
+                {
+}
+            );
+        
+    
+            feature_group_4945c3d3ed0c0ea182844d25103c335b.addTo(map_f7fc2c37eb2c4fbf45c2a217602fcbf2);
+        
+    
+            var feature_group_7f9a820768b7b4d64fd32a887379b45d = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_8912b8fadf3810928a1ea437d4e1871a = L.circleMarker(
+                [37.994, -75.822],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_7f9a820768b7b4d64fd32a887379b45d);
+        
+    
+        var popup_0e0fa9dc30ae371e8fd169ee0bded504 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_425dacd0477ec4aeddcff594b60e0d8c = $(`<div id="html_425dacd0477ec4aeddcff594b60e0d8c" style="width: 100.0%; height: 100.0%;">Cash_Corner - 2.0"</div>`)[0];
+                popup_0e0fa9dc30ae371e8fd169ee0bded504.setContent(html_425dacd0477ec4aeddcff594b60e0d8c);
+            
+        
+
+        circle_marker_8912b8fadf3810928a1ea437d4e1871a.bindPopup(popup_0e0fa9dc30ae371e8fd169ee0bded504)
+        ;
+
+        
+    
+    
+            var circle_marker_95a76cfe8c15dbfa13aba9f15dd6ea6b = L.circleMarker(
+                [38.0, -75.779],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_7f9a820768b7b4d64fd32a887379b45d);
+        
+    
+        var popup_42b6198ca3e3d8e0b3693ad28f2a5813 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5bf7745eda8bf06d5f9f01a026c70154 = $(`<div id="html_5bf7745eda8bf06d5f9f01a026c70154" style="width: 100.0%; height: 100.0%;">Indian_Hammock - 2.0"</div>`)[0];
+                popup_42b6198ca3e3d8e0b3693ad28f2a5813.setContent(html_5bf7745eda8bf06d5f9f01a026c70154);
+            
+        
+
+        circle_marker_95a76cfe8c15dbfa13aba9f15dd6ea6b.bindPopup(popup_42b6198ca3e3d8e0b3693ad28f2a5813)
+        ;
+
+        
+    
+    
+            var circle_marker_3b29b04e06d167914f3e667563888977 = L.circleMarker(
+                [38.008, -75.837],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_7f9a820768b7b4d64fd32a887379b45d);
+        
+    
+        var popup_8872665ff3146a31da95a2f50df48063 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9d3d7a3c21a022ddf72517e32abc8053 = $(`<div id="html_9d3d7a3c21a022ddf72517e32abc8053" style="width: 100.0%; height: 100.0%;">Somerset_County - 2.0"</div>`)[0];
+                popup_8872665ff3146a31da95a2f50df48063.setContent(html_9d3d7a3c21a022ddf72517e32abc8053);
+            
+        
+
+        circle_marker_3b29b04e06d167914f3e667563888977.bindPopup(popup_8872665ff3146a31da95a2f50df48063)
+        ;
+
+        
+    
+    
+            var circle_marker_0b5791471be8ac5a5d5606e91db888ff = L.circleMarker(
+                [37.988, -75.724],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_7f9a820768b7b4d64fd32a887379b45d);
+        
+    
+        var popup_d9885b7c2104bc4f2ebefc6c16279539 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b8240c20ec0349f36cc654e67d326dcc = $(`<div id="html_b8240c20ec0349f36cc654e67d326dcc" style="width: 100.0%; height: 100.0%;">Somerset_County - 2.0"</div>`)[0];
+                popup_d9885b7c2104bc4f2ebefc6c16279539.setContent(html_b8240c20ec0349f36cc654e67d326dcc);
+            
+        
+
+        circle_marker_0b5791471be8ac5a5d5606e91db888ff.bindPopup(popup_d9885b7c2104bc4f2ebefc6c16279539)
+        ;
+
+        
+    
+    
+            var circle_marker_2cd7ecc29aa03b300651b95c5752ed5c = L.circleMarker(
+                [37.987, -75.726],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_7f9a820768b7b4d64fd32a887379b45d);
+        
+    
+        var popup_6b22a6b9b79878aef65b48c4976257a9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9e1b4148cfeb51dedc0246b17d206b78 = $(`<div id="html_9e1b4148cfeb51dedc0246b17d206b78" style="width: 100.0%; height: 100.0%;">Somerset_County - 2.25"</div>`)[0];
+                popup_6b22a6b9b79878aef65b48c4976257a9.setContent(html_9e1b4148cfeb51dedc0246b17d206b78);
+            
+        
+
+        circle_marker_2cd7ecc29aa03b300651b95c5752ed5c.bindPopup(popup_6b22a6b9b79878aef65b48c4976257a9)
+        ;
+
+        
+    
+    
+            feature_group_7f9a820768b7b4d64fd32a887379b45d.addTo(map_f7fc2c37eb2c4fbf45c2a217602fcbf2);
+        
+    
+            var feature_group_cba037b7003e4a8a85643b7b46ba38b8 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_de438fbdf070f4954eb1d166f697ee91 = L.circle(
+                [37.994, -75.822],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_cba037b7003e4a8a85643b7b46ba38b8);
+        
+    
+            var circle_d24255aba677a66bd63963aee706eff3 = L.circle(
+                [38.0, -75.779],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_cba037b7003e4a8a85643b7b46ba38b8);
+        
+    
+            var circle_165aa963bf4f3db0c66c0266b7fe67c4 = L.circle(
+                [38.008, -75.837],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_cba037b7003e4a8a85643b7b46ba38b8);
+        
+    
+            var circle_b5f753371e090c51eedf7f9a2c71396d = L.circle(
+                [37.988, -75.724],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_cba037b7003e4a8a85643b7b46ba38b8);
+        
+    
+            var circle_73c5dd37d15dacc1b1bb0e6d0fa9f096 = L.circle(
+                [37.987, -75.726],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_cba037b7003e4a8a85643b7b46ba38b8);
+        
+    
+            feature_group_cba037b7003e4a8a85643b7b46ba38b8.addTo(map_f7fc2c37eb2c4fbf45c2a217602fcbf2);
+        
+    
+            var layer_control_cd9fae0b08950744fe3b5b2144e57ac6_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_100550be4d01e807e04d4572aaf5bd97,
+                    "Standard" : tile_layer_ff813ac3585f9be5c0738402f5a9093b,
+                    "Satellite" : tile_layer_1876c754a3d57531306078f0333460ab,
+                },
+                overlays :  {
+                    "Red (\u2265 4\")" : feature_group_781e155fbc4ec529ba912bdce7b88e03,
+                    "Purple (3\" \u2013 3.99\")" : feature_group_924ef3f6c4cd3ffaa844b2bd402e779b,
+                    "Orange (2.51\" \u2013 2.99\")" : feature_group_4945c3d3ed0c0ea182844d25103c335b,
+                    "Blue (\u003c 2.5\")" : feature_group_7f9a820768b7b4d64fd32a887379b45d,
+                    "1-Mile Radius Zones" : feature_group_cba037b7003e4a8a85643b7b46ba38b8,
+                },
+            };
+            let layer_control_cd9fae0b08950744fe3b5b2144e57ac6 = L.control.layers(
+                layer_control_cd9fae0b08950744fe3b5b2144e57ac6_layers.base_layers,
+                layer_control_cd9fae0b08950744fe3b5b2144e57ac6_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_f7fc2c37eb2c4fbf45c2a217602fcbf2);
+
+        
+</script>
+</html>
