@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_81814067f894bc3a4ff81bf4defb89ff {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_81814067f894bc3a4ff81bf4defb89ff" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_81814067f894bc3a4ff81bf4defb89ff = L.map(
+                "map_81814067f894bc3a4ff81bf4defb89ff",
+                {
+                    center: [39.8283, -98.5795],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_81814067f894bc3a4ff81bf4defb89ff);
+
+            
+
+        
+    
+            var tile_layer_27dac96b994133faf799a4a4c7483f76 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_27dac96b994133faf799a4a4c7483f76.addTo(map_81814067f894bc3a4ff81bf4defb89ff);
+        
+    
+            var tile_layer_25c43e592919231b09f830daa099fb37 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_25c43e592919231b09f830daa099fb37.addTo(map_81814067f894bc3a4ff81bf4defb89ff);
+        
+    
+            var tile_layer_3610abb673faff7519208da1717a3b3b = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Esri",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3610abb673faff7519208da1717a3b3b.addTo(map_81814067f894bc3a4ff81bf4defb89ff);
+        
+    
+            var feature_group_b9018ad0c027d20d845329ded455ef10 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            feature_group_b9018ad0c027d20d845329ded455ef10.addTo(map_81814067f894bc3a4ff81bf4defb89ff);
+        
+    
+            var feature_group_f4b85e10653aeada0244a4b77fa7ef08 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            feature_group_f4b85e10653aeada0244a4b77fa7ef08.addTo(map_81814067f894bc3a4ff81bf4defb89ff);
+        
+    
+            var feature_group_926f1dfa1ce195e07f0d5306ffd4769a = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_3426be831f9843d6845d403653140ded = L.circleMarker(
+                [36.932, -102.755],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_926f1dfa1ce195e07f0d5306ffd4769a);
+        
+    
+        var popup_ac9bd7e72d2f5186c0d862a69ee87fa1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7ed53eb57bd5a6adf6227c90686ad864 = $(`<div id="html_7ed53eb57bd5a6adf6227c90686ad864" style="width: 100.0%; height: 100.0%;">Cimarron_County - 2.75"</div>`)[0];
+                popup_ac9bd7e72d2f5186c0d862a69ee87fa1.setContent(html_7ed53eb57bd5a6adf6227c90686ad864);
+            
+        
+
+        circle_marker_3426be831f9843d6845d403653140ded.bindPopup(popup_ac9bd7e72d2f5186c0d862a69ee87fa1)
+        ;
+
+        
+    
+    
+            feature_group_926f1dfa1ce195e07f0d5306ffd4769a.addTo(map_81814067f894bc3a4ff81bf4defb89ff);
+        
+    
+            var feature_group_9773820fa35f93ed2b825a6315e3ad35 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_4f77a119ce61690154d8cce29d4d657d = L.circleMarker(
+                [31.556, -90.133],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9773820fa35f93ed2b825a6315e3ad35);
+        
+    
+        var popup_c0a8acad555c47fb8db20e4f9b731793 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a926db0dba404f2c72e2ce4350671faa = $(`<div id="html_a926db0dba404f2c72e2ce4350671faa" style="width: 100.0%; height: 100.0%;">Lawrence_County - 2.0"</div>`)[0];
+                popup_c0a8acad555c47fb8db20e4f9b731793.setContent(html_a926db0dba404f2c72e2ce4350671faa);
+            
+        
+
+        circle_marker_4f77a119ce61690154d8cce29d4d657d.bindPopup(popup_c0a8acad555c47fb8db20e4f9b731793)
+        ;
+
+        
+    
+    
+            var circle_marker_ece427acc7c49f434a79d0f90c14a7b1 = L.circleMarker(
+                [36.355, -103.441],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9773820fa35f93ed2b825a6315e3ad35);
+        
+    
+        var popup_5679c4cabd73a31c370852399096f96b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1c2948b156bac5f1947802e2b399ac21 = $(`<div id="html_1c2948b156bac5f1947802e2b399ac21" style="width: 100.0%; height: 100.0%;">Union_County - 2.25"</div>`)[0];
+                popup_5679c4cabd73a31c370852399096f96b.setContent(html_1c2948b156bac5f1947802e2b399ac21);
+            
+        
+
+        circle_marker_ece427acc7c49f434a79d0f90c14a7b1.bindPopup(popup_5679c4cabd73a31c370852399096f96b)
+        ;
+
+        
+    
+    
+            var circle_marker_285ff4db75232291f52bb891af160bb9 = L.circleMarker(
+                [36.94, -102.812],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9773820fa35f93ed2b825a6315e3ad35);
+        
+    
+        var popup_c645791308d357d47c4dcdc79d93c953 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cf1b24021dcc30ce4a50721251eb20e2 = $(`<div id="html_cf1b24021dcc30ce4a50721251eb20e2" style="width: 100.0%; height: 100.0%;">Cimarron_County - 2.0"</div>`)[0];
+                popup_c645791308d357d47c4dcdc79d93c953.setContent(html_cf1b24021dcc30ce4a50721251eb20e2);
+            
+        
+
+        circle_marker_285ff4db75232291f52bb891af160bb9.bindPopup(popup_c645791308d357d47c4dcdc79d93c953)
+        ;
+
+        
+    
+    
+            var circle_marker_49a7b1b2197c6115da3e974ada4646a1 = L.circleMarker(
+                [36.909, -102.775],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9773820fa35f93ed2b825a6315e3ad35);
+        
+    
+        var popup_fdbcbc1a453b8ce19a9dfb072a4ecbcc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8f09cee460d292c6f961787926987966 = $(`<div id="html_8f09cee460d292c6f961787926987966" style="width: 100.0%; height: 100.0%;">Cimarron_County - 2.0"</div>`)[0];
+                popup_fdbcbc1a453b8ce19a9dfb072a4ecbcc.setContent(html_8f09cee460d292c6f961787926987966);
+            
+        
+
+        circle_marker_49a7b1b2197c6115da3e974ada4646a1.bindPopup(popup_fdbcbc1a453b8ce19a9dfb072a4ecbcc)
+        ;
+
+        
+    
+    
+            var circle_marker_aeaedbf24d06a33835a7572498407041 = L.circleMarker(
+                [36.939, -102.748],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9773820fa35f93ed2b825a6315e3ad35);
+        
+    
+        var popup_614fbbe6a2add3d34ef9ee84706138ed = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_efaa2f796bcc658a50f048b1e2a9358d = $(`<div id="html_efaa2f796bcc658a50f048b1e2a9358d" style="width: 100.0%; height: 100.0%;">Cimarron_County - 2.0"</div>`)[0];
+                popup_614fbbe6a2add3d34ef9ee84706138ed.setContent(html_efaa2f796bcc658a50f048b1e2a9358d);
+            
+        
+
+        circle_marker_aeaedbf24d06a33835a7572498407041.bindPopup(popup_614fbbe6a2add3d34ef9ee84706138ed)
+        ;
+
+        
+    
+    
+            var circle_marker_76e3de02d609324951a4345515e5f0ec = L.circleMarker(
+                [36.932, -102.755],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9773820fa35f93ed2b825a6315e3ad35);
+        
+    
+        var popup_b4d0b78392b345914de3bc3c8121a9c7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5dd2964c851ecd432e40737376aef5a1 = $(`<div id="html_5dd2964c851ecd432e40737376aef5a1" style="width: 100.0%; height: 100.0%;">Cimarron_County - 2.25"</div>`)[0];
+                popup_b4d0b78392b345914de3bc3c8121a9c7.setContent(html_5dd2964c851ecd432e40737376aef5a1);
+            
+        
+
+        circle_marker_76e3de02d609324951a4345515e5f0ec.bindPopup(popup_b4d0b78392b345914de3bc3c8121a9c7)
+        ;
+
+        
+    
+    
+            var circle_marker_0b90c30c8da9185e04335c9c6109097f = L.circleMarker(
+                [36.952, -102.722],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9773820fa35f93ed2b825a6315e3ad35);
+        
+    
+        var popup_b8e143304a759caf953cb1fbc803d507 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2fc7ca6e8bfccf0fc4cb28639d37c4c7 = $(`<div id="html_2fc7ca6e8bfccf0fc4cb28639d37c4c7" style="width: 100.0%; height: 100.0%;">Cimarron_County - 2.25"</div>`)[0];
+                popup_b8e143304a759caf953cb1fbc803d507.setContent(html_2fc7ca6e8bfccf0fc4cb28639d37c4c7);
+            
+        
+
+        circle_marker_0b90c30c8da9185e04335c9c6109097f.bindPopup(popup_b8e143304a759caf953cb1fbc803d507)
+        ;
+
+        
+    
+    
+            feature_group_9773820fa35f93ed2b825a6315e3ad35.addTo(map_81814067f894bc3a4ff81bf4defb89ff);
+        
+    
+            var feature_group_2c59ef72bfc45fe4a816f33758cff217 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_6e85542c739bfa4bc735db9d7f0ec7c7 = L.circle(
+                [31.556, -90.133],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_2c59ef72bfc45fe4a816f33758cff217);
+        
+    
+            var circle_cf1f1de91f1f1a36a935738da929e2ea = L.circle(
+                [36.355, -103.441],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_2c59ef72bfc45fe4a816f33758cff217);
+        
+    
+            var circle_0ccdee728b12b29e33f3b67a90db79e1 = L.circle(
+                [36.94, -102.812],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_2c59ef72bfc45fe4a816f33758cff217);
+        
+    
+            var circle_7d8010d262d3229eb8a79779f7b1bc29 = L.circle(
+                [36.909, -102.775],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_2c59ef72bfc45fe4a816f33758cff217);
+        
+    
+            var circle_f5854fb0da7cf0be098b56a680c9882b = L.circle(
+                [36.939, -102.748],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_2c59ef72bfc45fe4a816f33758cff217);
+        
+    
+            var circle_c4805858b6169032265202d05ad3ac0e = L.circle(
+                [36.932, -102.755],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_2c59ef72bfc45fe4a816f33758cff217);
+        
+    
+            var circle_c20366e76594de751025f4b2af5f2f5c = L.circle(
+                [36.952, -102.722],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_2c59ef72bfc45fe4a816f33758cff217);
+        
+    
+            var circle_2b5f33be7ff0b0280231c115e94dbd58 = L.circle(
+                [36.932, -102.755],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1609, "stroke": true, "weight": 0}
+            ).addTo(feature_group_2c59ef72bfc45fe4a816f33758cff217);
+        
+    
+            feature_group_2c59ef72bfc45fe4a816f33758cff217.addTo(map_81814067f894bc3a4ff81bf4defb89ff);
+        
+    
+            var layer_control_71980bd7e69088163c333554451dbff0_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_27dac96b994133faf799a4a4c7483f76,
+                    "Standard" : tile_layer_25c43e592919231b09f830daa099fb37,
+                    "Satellite" : tile_layer_3610abb673faff7519208da1717a3b3b,
+                },
+                overlays :  {
+                    "Red (\u2265 4\")" : feature_group_b9018ad0c027d20d845329ded455ef10,
+                    "Purple (3\" \u2013 3.99\")" : feature_group_f4b85e10653aeada0244a4b77fa7ef08,
+                    "Orange (2.51\" \u2013 2.99\")" : feature_group_926f1dfa1ce195e07f0d5306ffd4769a,
+                    "Blue (\u003c 2.5\")" : feature_group_9773820fa35f93ed2b825a6315e3ad35,
+                    "1-Mile Radius Zones" : feature_group_2c59ef72bfc45fe4a816f33758cff217,
+                },
+            };
+            let layer_control_71980bd7e69088163c333554451dbff0 = L.control.layers(
+                layer_control_71980bd7e69088163c333554451dbff0_layers.base_layers,
+                layer_control_71980bd7e69088163c333554451dbff0_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_81814067f894bc3a4ff81bf4defb89ff);
+
+        
+</script>
+</html>
